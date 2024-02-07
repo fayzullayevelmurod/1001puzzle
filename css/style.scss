@@ -1,5 +1,6 @@
 // colors
 $red: #FF0000;
+$black: #000000;
 $coral: #FE9B00;
 $green: #00CF08;
 $white: #FFFFFF;
@@ -100,3 +101,217 @@ address {
     padding: 0 10px;
     margin: 0 auto;
 }
+
+.main_btn {
+    color: $white;
+    font-family: $Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    border-radius: 10px;
+    background-color: $coral;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+    @include transition();
+
+    &:hover {
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(237, 147, 5);
+    }
+
+    &:active {
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(232, 141, 0);
+    }
+}
+
+// header
+header {
+    .header_top {
+        padding-top: 25px;
+        @include flex-center();
+        justify-content: space-between;
+
+        .nav_link {
+            @include flex-center();
+            gap: 34px;
+        }
+
+        .nav_item {
+            a {
+                @include flex-center();
+                gap: 11px;
+                color: $black;
+                font-family: $Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0%;
+            }
+        }
+    }
+
+    .header_top_right {
+        @include flex-center();
+        gap: 34px;
+
+        .header_phone {
+            @include flex-center();
+            gap: 10px;
+        }
+
+        .header_number {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            a {
+                color: $black;
+                font-family: $Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0%;
+            }
+        }
+
+        .header_flags {
+            padding: 7px 10px;
+            @include flex-center();
+            gap: 10px;
+            border-radius: 10px;
+            background: $grey-1;
+        }
+
+        .header_feedback {
+            padding: 10px 45px;
+        }
+    }
+    
+    .header_bottom {
+        padding: 40px 20px 80px 0;
+        gap: 100px;
+        @include flex-center();
+        justify-content: space-between;
+    }
+
+    .header_search {
+        @include flex-center();
+        height: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+
+
+        .catalog_btn {
+            flex-shrink: 0;
+            width: 154px;
+            padding: 7px 20px 7px 20px;
+            height: 100%;
+            color: $white;
+            font-family: $Roboto;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            gap: 10px;
+            @include flex-center();
+            background-color: $coral;
+            @include transition();
+            box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1); 
+
+            &:hover {
+                box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+                background: rgb(237, 147, 5);
+            }
+        
+            &:active {
+                box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+                background: rgb(232, 141, 0);
+            }
+        }
+
+        input {
+            width: 503px;
+            height: 100%;
+            border: 1px solid $coral;
+            color: $grey-1;
+            font-family: $Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0%;
+            padding: 10px 20px;
+        }
+
+        input::placeholder {
+            color: $grey-1;
+        }
+
+        label {
+            flex-shrink: 0;
+            cursor: pointer;
+            height: 100%;
+            padding: 10px 20px;
+            background-color: $coral;
+            @include transition();
+            box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1); 
+
+            &:hover {
+                box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+                background: rgb(237, 147, 5);
+            }
+        
+            &:active {
+                box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+                background: rgb(232, 141, 0);
+            }
+        }
+    }
+
+    .header_bottom_link {
+        @include flex-center();
+        gap: 50px;
+
+        a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3px;
+            color: $black;
+            font-family: $Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0%;
+        }
+
+        .heart_btn, .shop_btn {
+            position: relative;
+
+            .number {
+                position: absolute;
+                top: 0;
+                right: -10px;
+                color: $white;
+                font-family: $Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                letter-spacing: 0%;
+                border-radius: 10px;
+                width: 28px;
+                height: 20px;
+                @include flex-full-center();
+                background: $coral;
+            }
+        }
+
+        .shop_btn {
+            .number {
+                right: -20px;
+            }
+        }
+    }
+}
+// header

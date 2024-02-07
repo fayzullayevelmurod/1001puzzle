@@ -51,4 +51,199 @@ address {
   max-width: 1380px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.main_btn {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  border-radius: 10px;
+  background-color: #FE9B00;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+}
+.main_btn:hover {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(237, 147, 5);
+}
+.main_btn:active {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(232, 141, 0);
+}
+
+header .header_top {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_top .nav_link {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+header .header_top .nav_item a {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+header .header_top_right {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+header .header_top_right .header_phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .header_top_right .header_number {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+header .header_top_right .header_number a {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+header .header_top_right .header_flags {
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #D9D9D9;
+}
+header .header_top_right .header_feedback {
+  padding: 10px 45px;
+}
+header .header_bottom {
+  padding: 40px 20px 80px 0;
+  gap: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+header .header_search .catalog_btn {
+  flex-shrink: 0;
+  width: 154px;
+  padding: 7px 20px 7px 20px;
+  height: 100%;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #FE9B00;
+  transition: 0.2s ease;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+}
+header .header_search .catalog_btn:hover {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(237, 147, 5);
+}
+header .header_search .catalog_btn:active {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(232, 141, 0);
+}
+header .header_search input {
+  width: 503px;
+  height: 100%;
+  border: 1px solid #FE9B00;
+  color: #D9D9D9;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  padding: 10px 20px;
+}
+header .header_search input::-moz-placeholder {
+  color: #D9D9D9;
+}
+header .header_search input::placeholder {
+  color: #D9D9D9;
+}
+header .header_search label {
+  flex-shrink: 0;
+  cursor: pointer;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: #FE9B00;
+  transition: 0.2s ease;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+}
+header .header_search label:hover {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(237, 147, 5);
+}
+header .header_search label:active {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(232, 141, 0);
+}
+header .header_bottom_link {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+header .header_bottom_link a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+header .header_bottom_link .heart_btn, header .header_bottom_link .shop_btn {
+  position: relative;
+}
+header .header_bottom_link .heart_btn .number, header .header_bottom_link .shop_btn .number {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  border-radius: 10px;
+  width: 28px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FE9B00;
+}
+header .header_bottom_link .shop_btn .number {
+  right: -20px;
 }/*# sourceMappingURL=style.css.map */
