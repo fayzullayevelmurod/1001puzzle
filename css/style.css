@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, label {
+  display: inline-block;
+}
+
+body {
+  font-style: normal;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container_wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main_container {
+  max-width: 1380px;
+  padding: 0 10px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
