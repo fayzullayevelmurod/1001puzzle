@@ -127,6 +127,41 @@
             }
         }
     }
+
+    .contact {
+
+        .right_block {
+            .contact_map {
+                iframe {
+                    height: 259px;
+                }
+            }
+
+            .contact_text {
+                .contact_text_block {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .contact_text_block {
+
+                h6 {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+    
+                p {
+                    font-size: 16px;
+                }
+            }
+
+        }
+        .contact_imgs {
+            .contact_img {
+                width: calc(100% / 3 - 14px);
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -271,6 +306,83 @@
                     font-weight: 700;
                     line-height: 30px;
                 }
+            }
+        }
+    }
+
+    .contact {
+        padding: 30px 0 40px 0;
+
+        .main_container {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .left_block {
+            flex-wrap: wrap;
+            padding: 20px;
+            width: 100%;
+            flex-direction: row;
+            gap: 24px 46px;
+
+            a {
+                white-space: nowrap;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+            }
+        }
+
+        .right_block {
+            .contact_map {
+                iframe {
+                    height: 117px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .contact_text {
+                .contact_text_block {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .contact_text_block {
+
+                h6 {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    line-height: 160%;
+                }
+            }
+
+            form {
+                width: 100%;
+                padding: 20px 10px;
+
+                input, textarea {
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+
+                button {
+                    margin-top: 5px;
+                }
+            }
+
+        }
+
+        .contact_imgs {
+
+            .main_container {
+                flex-direction: row;
+            }
+            .contact_img {
+                width: calc(100% / 2 - 10px);
             }
         }
     }
