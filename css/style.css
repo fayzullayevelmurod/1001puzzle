@@ -104,6 +104,9 @@ label {
   letter-spacing: 0%;
 }
 .main_breadcrumb span {
+  font-weight: 500;
+}
+.main_breadcrumb span {
   color: #000000;
 }
 
@@ -693,6 +696,92 @@ footer .footer_bottom .footer_pay_in {
 .contact .payment_text p:last-child {
   margin-bottom: 0;
 }
+.contact .about_text h6 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+}
+.contact .about_text h6:last-child {
+  margin-bottom: 0;
+}
+.contact .about_text h5 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+}
+.contact .about_text p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+}
+.contact .about_text .about_cards {
+  margin-bottom: 40px;
+  gap: 20px 0;
+}
+.contact .about_text .about_card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+.contact .about_text .about_card img {
+  width: 70px;
+}
+.contact .about_text .about_card span {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.authors {
+  margin: 50px 0 70px 0;
+}
+.authors .circle {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FE9B00;
+}
+.authors .authors_card {
+  border-right: 1px solid rgb(217, 217, 217);
+  padding: 0 50px;
+}
+.authors .authors_card:first-child {
+  padding-left: 0;
+}
+.authors .authors_card:last-child {
+  border-right: none;
+}
+.authors ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.authors ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-decoration-line: underline;
+}
 
 @media only screen and (max-width: 1100px) {
   header .header_top {
@@ -828,6 +917,30 @@ footer .footer_bottom .footer_pay_in {
   .contact .payment_text p {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+  .contact .about_text h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .contact .about_text h6:last-child {
+    margin-bottom: 0;
+  }
+  .contact .about_text h5 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .contact .about_text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .contact .about_text .about_cards {
+    margin-bottom: 30px;
+  }
+  .contact .about_text .about_card img {
+    width: 70px;
+  }
+  .contact .about_text .about_card span {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1010,6 +1123,27 @@ footer .footer_bottom .footer_pay_in {
   .contact .payment_text p {
     font-size: 14px;
     margin-bottom: 10px;
+  }
+  .contact .about_text h6 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .contact .about_text h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .contact .about_text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .contact .about_text .about_cards {
+    margin-bottom: 30px;
+  }
+  .contact .about_text .about_card img {
+    width: 50px;
+  }
+  .contact .about_text .about_card span {
+    font-size: 12px;
   }
 }
 .home-block {
