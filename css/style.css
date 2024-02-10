@@ -19,6 +19,10 @@ span, label {
   display: inline-block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif !important;
   font-style: normal;
@@ -755,12 +759,28 @@ footer .footer_bottom .footer_pay_in {
   border-radius: 50%;
   background-color: #FE9B00;
 }
+.authors .main_container {
+  position: relative;
+}
+.authors .main_container .scroll_top {
+  margin-top: 30px;
+  margin-left: auto;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FE9B00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .authors .authors_card {
   border-right: 1px solid rgb(217, 217, 217);
-  padding: 0 50px;
+  padding: 20px 30px;
 }
 .authors .authors_card:first-child {
-  padding-left: 0;
+  padding-left: 20px;
 }
 .authors .authors_card:last-child {
   border-right: none;
@@ -941,6 +961,36 @@ footer .footer_bottom .footer_pay_in {
   }
   .contact .about_text .about_card span {
     font-size: 16px;
+  }
+  .authors {
+    margin: 40px 0;
+  }
+  .authors .authors_card {
+    padding: 0 20px 0 20px;
+  }
+  .authors .authors_card:first-child {
+    padding: 0 20px 0 20px;
+  }
+  .authors .authors_card a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .authors .main_container .scroll_top {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: -100px;
+    right: 10px;
+    background-color: #FFFFFF;
+  }
+  .authors .main_container .scroll_top svg {
+    width: 21px;
+  }
+  .authors .main_container .scroll_top svg path {
+    fill: #FE9B00;
+  }
+  .authors ul {
+    padding-bottom: 0;
   }
 }
 @media only screen and (max-width: 768px) {

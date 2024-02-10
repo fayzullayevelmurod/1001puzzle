@@ -68,6 +68,10 @@ span, label {
     display: inline-block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $Roboto !important;
     font-style: normal;
@@ -897,12 +901,29 @@ footer {
         background-color: $coral;
     }
 
+    .main_container {
+        position: relative;
+
+        .scroll_top {
+            // position: absolute;
+            margin-top: 30px;
+            margin-left: auto;
+            bottom: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $coral;
+            @include flex-full-center();
+        }
+    }
+
     .authors_card {
         border-right: 1px solid rgb(217, 217, 217);
-        padding: 0 50px;
+        padding: 20px 30px;
 
         &:first-child {
-            padding-left: 0;
+            padding-left: 20px;
         }
 
         &:last-child {

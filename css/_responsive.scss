@@ -243,6 +243,44 @@
         }
     }
 
+    .authors {
+        margin: 40px 0;
+        .authors_card {
+            padding: 0 20px 0 20px;
+
+            &:first-child {
+                padding: 0 20px 0 20px;
+            }
+
+            a {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        .main_container {
+            .scroll_top {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: -100px;
+                right: 10px;
+                background-color: $white;
+
+                svg {
+                    width: 21px;
+                    path {
+                        fill: $coral;
+                    }
+                }
+            }
+        }
+
+        ul {
+            padding-bottom: 0;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -532,4 +570,5 @@
             }
         }
     }
+
 }
