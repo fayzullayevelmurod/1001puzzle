@@ -55,7 +55,7 @@ $Reggae: 'Reggae One', system-ui;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     display: inline-block;
 }
@@ -97,6 +97,23 @@ address {
     margin: 0 auto;
 }
 
+// bootstrap
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+label {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+// bootstrap
+
 .main_container {
     max-width: 1380px;
     padding: 0 10px;
@@ -125,9 +142,10 @@ address {
     }
 }
 
-.breadcrumb {
+.main_breadcrumb {
     @include flex-center();
     gap: 5px;
+    margin-bottom: 0;
 
     span, a {
         color: rgb(186, 186, 186);
@@ -153,6 +171,7 @@ header {
         .nav_link {
             @include flex-center();
             gap: 34px;
+            margin-bottom: 0;
         }
 
         .nav_item {
@@ -270,6 +289,8 @@ header {
         }
 
         label {
+            @include flex-full-center();
+            margin-bottom: 0;
             flex-shrink: 0;
             cursor: pointer;
             height: 100%;
@@ -344,12 +365,14 @@ header {
         }
 
         label {
+            @include flex-full-center();
             flex-shrink: 0;
             cursor: pointer;
             height: 100%;
             padding: 10px 20px;
             background-color: $coral;
             @include transition();
+            margin-bottom: 0;
             box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1); 
 
             &:hover {
@@ -367,6 +390,7 @@ header {
     .header_bottom_link {
         @include flex-center();
         gap: 50px;
+        margin-bottom: 0;
 
         a {
             display: flex;
@@ -578,6 +602,7 @@ footer {
     }
 
     .left_block {
+        margin-bottom: 0;
         width: 210px;
         padding: 20px 17px;
         display: flex;
@@ -656,7 +681,8 @@ footer {
                 letter-spacing: 0%;
 
                 a {
-                    text-decoration: underline
+                    color: $black;
+                    border-bottom: 1px solid;
                 }
 
             }

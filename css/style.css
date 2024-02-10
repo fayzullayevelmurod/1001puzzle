@@ -6,7 +6,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
   display: inline-block;
 }
@@ -48,6 +48,21 @@ address {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+label {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .main_container {
   max-width: 1380px;
   padding: 0 10px;
@@ -74,12 +89,13 @@ address {
   background: rgb(232, 141, 0);
 }
 
-.breadcrumb {
+.main_breadcrumb {
   display: flex;
   align-items: center;
   gap: 5px;
+  margin-bottom: 0;
 }
-.breadcrumb span, .breadcrumb a {
+.main_breadcrumb span, .main_breadcrumb a {
   color: rgb(186, 186, 186);
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -87,7 +103,7 @@ address {
   line-height: 21px;
   letter-spacing: 0%;
 }
-.breadcrumb span {
+.main_breadcrumb span {
   color: #000000;
 }
 
@@ -101,6 +117,7 @@ header .header_top .nav_link {
   display: flex;
   align-items: center;
   gap: 34px;
+  margin-bottom: 0;
 }
 header .header_top .nav_item a {
   display: flex;
@@ -208,6 +225,10 @@ header .header_search_media input::placeholder {
   color: #D9D9D9;
 }
 header .header_search_media label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
   flex-shrink: 0;
   cursor: pointer;
   height: 100%;
@@ -277,12 +298,16 @@ header .header_search input::placeholder {
   color: #D9D9D9;
 }
 header .header_search label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   cursor: pointer;
   height: 100%;
   padding: 10px 20px;
   background-color: #FE9B00;
   transition: 0.2s ease;
+  margin-bottom: 0;
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
 }
 header .header_search label:hover {
@@ -297,6 +322,7 @@ header .header_bottom_link {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-bottom: 0;
 }
 header .header_bottom_link a {
   display: flex;
@@ -483,6 +509,7 @@ footer .footer_bottom .footer_pay_in {
   gap: 20px;
 }
 .contact .left_block {
+  margin-bottom: 0;
   width: 210px;
   padding: 20px 17px;
   display: flex;
@@ -549,7 +576,8 @@ footer .footer_bottom .footer_pay_in {
   letter-spacing: 0%;
 }
 .contact .right_block .contact_text p a {
-  text-decoration: underline;
+  color: #000000;
+  border-bottom: 1px solid;
 }
 .contact .right_block form {
   width: 379px;
@@ -831,10 +859,10 @@ footer .footer_bottom .footer_pay_in {
   footer .footer_bottom .footer_pay_in a {
     width: 50px;
   }
-  .breadcrumb span, .breadcrumb a {
+  .main_breadcrumb span, .main_breadcrumb a {
     font-size: 12px;
   }
-  .breadcrumb img {
+  .main_breadcrumb img {
     width: 14px;
   }
   .error {
