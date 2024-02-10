@@ -710,6 +710,31 @@ footer {
                 width: 100%;
             }
         }
+
+        .help_title {
+            color: $black;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 160%;
+            letter-spacing: 0%;
+            margin-bottom: 40px;
+        }
+
+        .help_block {
+            margin-bottom: 40px;
+            h5 {
+                color: $black;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 160%;
+                letter-spacing: 0%;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
     .contact_imgs {

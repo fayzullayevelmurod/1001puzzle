@@ -597,6 +597,28 @@ footer .footer_bottom .footer_pay_in {
   height: 45px;
   width: 100%;
 }
+.contact .right_block .help_title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+}
+.contact .right_block .help_block {
+  margin-bottom: 40px;
+}
+.contact .right_block .help_block h5 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.contact .right_block .help_block img {
+  width: 100%;
+}
 .contact .contact_imgs {
   margin-top: 80px;
 }
@@ -711,6 +733,16 @@ footer .footer_bottom .footer_pay_in {
   }
   .contact .right_block .contact_text_block p {
     font-size: 16px;
+  }
+  .contact .right_block .help_title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .contact .right_block .help_block {
+    margin-bottom: 30px;
+  }
+  .contact .right_block .help_block h5 {
+    font-size: 24px;
   }
   .contact .contact_imgs .contact_img {
     width: calc(33.3333333333% - 14px);
@@ -866,6 +898,17 @@ footer .footer_bottom .footer_pay_in {
   }
   .contact .right_block form button {
     margin-top: 5px;
+  }
+  .contact .right_block .help_title {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .contact .right_block .help_block h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contact .right_block .help_block:last-child {
+    margin-bottom: 0;
   }
   .contact .contact_imgs .main_container {
     flex-direction: row;
