@@ -58,6 +58,10 @@ a {
     text-decoration: none !important;
     color: inherit;
     display: inline-block;
+
+    &:hover {
+        color: inherit
+    }
 }
 
 img {
@@ -81,6 +85,7 @@ button {
     border: none;
     cursor: pointer;
     background: transparent;
+    outline: 0 !important;
 }
 
 address {
@@ -90,6 +95,14 @@ address {
 .wrapper {
     width: 100%;
     overflow: hidden;
+    position: relative;
+
+    &.home {
+        .main_container {
+            max-width: 1440px;
+            padding: 0 40px;
+        }
+    }
 }
 
 .container_wrapper {
@@ -134,6 +147,7 @@ label {
     &:hover {
         box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
         background: rgb(237, 147, 5);
+        color: #FFF;
     }
 
     &:active {
