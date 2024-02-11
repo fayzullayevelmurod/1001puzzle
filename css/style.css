@@ -98,6 +98,13 @@ label {
   align-items: center;
   gap: 5px;
   margin-bottom: 0;
+  flex-wrap: wrap;
+}
+.main_breadcrumb li {
+  white-space: nowrap;
+}
+.main_breadcrumb img {
+  flex-shrink: 0;
 }
 .main_breadcrumb span, .main_breadcrumb a {
   color: rgb(186, 186, 186);
@@ -212,6 +219,11 @@ header .header_search_media .catalog_btn:hover {
 header .header_search_media .catalog_btn:active {
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
   background: rgb(232, 141, 0);
+}
+header .header_search_media .catalog_btn:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 header .header_search_media input {
   width: 100%;
@@ -922,6 +934,60 @@ footer .footer_bottom .footer_pay_in {
   color: #FFFFFF;
 }
 
+.puzzles {
+  padding-bottom: 80px;
+}
+.puzzles .puzzles_head {
+  margin: 50px 0 80px 0;
+}
+.puzzles .puzzles_head img {
+  width: 100%;
+}
+.puzzles .puzzles_head span {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.puzzles .puzzles_head h6 {
+  display: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+.puzzles .puzzles_head p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+.puzzles .puzzles_card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+}
+.puzzles .puzzles_card h6 {
+  height: 46px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  padding: 15px 10px 0 10px;
+}
+.puzzles .puzzles_card img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1100px) {
   .main_container {
     padding: 0 48px;
@@ -1383,6 +1449,34 @@ footer .footer_bottom .footer_pay_in {
   .articles .articles_card .articles_card_text p {
     font-size: 14px;
     line-height: 16px;
+  }
+  .puzzles {
+    padding-bottom: 40px;
+  }
+  .puzzles .puzzles_head {
+    margin: 40px 0 30px 0;
+  }
+  .puzzles .puzzles_head span {
+    display: none;
+  }
+  .puzzles .puzzles_head h6 {
+    display: flex;
+    justify-content: end;
+  }
+  .puzzles .puzzles_head p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+  }
+  .puzzles .puzzles_card {
+    gap: 20px;
+  }
+  .puzzles .puzzles_card h6 {
+    padding: 10px 10px 0 10px;
+    font-size: 14px;
+    height: 32px;
+    font-weight: 400;
   }
 }
 @media only screen and (max-width: 600px) {

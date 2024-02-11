@@ -150,6 +150,15 @@ label {
     @include flex-center();
     gap: 5px;
     margin-bottom: 0;
+    flex-wrap: wrap;
+
+    li {
+        white-space: nowrap;
+    }
+
+    img {
+        flex-shrink: 0;
+    }
 
     span, a {
         color: rgb(186, 186, 186);
@@ -276,6 +285,12 @@ header {
             &:active {
                 box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
                 background: rgb(232, 141, 0);
+            }
+
+            &:focus {
+                border: none !important;
+                outline: none !important;
+                box-shadow: none !important;
             }
         }
 
@@ -1090,6 +1105,70 @@ footer {
 }
 // articles
 
+
+// puzzles
+.puzzles {
+    padding-bottom: 80px;
+
+    .puzzles_head {
+        margin: 50px 0 80px 0;
+
+        img {
+            width: 100%;
+        }
+
+        span {
+            color: $black;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0%;
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            display: none;
+            color: $black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $black;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 160%;
+            letter-spacing: 0%;
+        }
+    }
+
+    .puzzles_card {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(255, 255, 255);
+
+        h6 {
+            height: 46px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0%;
+            padding: 15px 10px 0 10px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+// puzzles
 
 @import 'responsive';
 @import 'glavny'
