@@ -148,8 +148,52 @@ $(document).ready(function () {
         auth_block_parent.slideTo(0)
     })
 
-    $('.auth_block__parent_slider').slideUp(0);
+    $('.auth_block__continue').hide(0);
     
+    
+    $('.auth_block__register .form_btn').click(function () {
+        $($('.auth_block__continue p')[0]).show(0);
+        $($('.auth_block__continue p')[1]).hide(0);
+        $('.auth_block__parent_slider').hide(0)
+        $('.auth_block__continue').show(0);
+    })
+
+    $($('.edit_password .form_btn')[1]).click(function () {
+        $($('.auth_block__continue p')[1]).show(0);
+        $($('.auth_block__continue p')[0]).hide(0);
+        $('.auth_block__parent_slider').hide(0)
+        $('.auth_block__continue').show(0);
+    })
+
+    $('.auth_block__close').click(function () {
+        if (window.innerWidth > 992) {
+            $('.auth_block').removeClass('active').addClass('end-active')
+        } else {
+            $('.auth_block').slideUp(0);
+        }
+        $('body').css({overflow: 'visible'})
+        setTimeout(() => {
+            $('.auth_block__parent_slider').show(0)
+            $('.auth_block__continue').hide(0);
+            auth_block_parent.slideTo(0)
+            $($('.auth_block__btn_group button')[0]).click();
+        }, 300);
+    })
+
+    $('.auth_block__open').click(function (e) {
+        e.preventDefault();
+        if (window.innerWidth > 992) {
+            $('.auth_block').removeClass('end-active').addClass('active')
+        } else {
+            $('.auth_block').slideDown(0);
+            $('.auth_block').css({display: 'flex'});
+            $('body').css({overflow: 'hidden'})
+        }
+    })
+
+    $('.auth_block__continue .form_btn').click(function () {
+        $('.auth_block__close').click();
+    })
 
     // Code here
 })

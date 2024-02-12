@@ -1856,6 +1856,9 @@ footer .footer_bottom .footer_pay_in {
   padding: 7px 24px 8px;
   gap: 35px;
 }
+.product-commentary__item_wrap {
+  gap: 40px;
+}
 .product-commentary__item_head {
   gap: 10px;
   margin-bottom: 28px;
@@ -2089,6 +2092,32 @@ footer .footer_bottom .footer_pay_in {
   margin: 40px 0 80px;
 }
 
+.about_author {
+  margin-bottom: 80px;
+  gap: 20px;
+}
+.about_author h2, .about_author h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 160%;
+}
+.about_author p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.about_author__left {
+  flex-shrink: 0;
+}
+.about_author__left h2 {
+  display: none;
+}
+.about_author__right {
+  gap: 20px;
+}
+
 @media only screen and (max-width: 1200px) {
   .product-slider__card_wrap .product-slider__card_item {
     width: calc(50% - 10px);
@@ -2278,10 +2307,53 @@ footer .footer_bottom .footer_pay_in {
     font-weight: 700;
     line-height: 30px;
   }
+  .auth_block__content {
+    top: -150px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .filter_modal {
     display: none !important;
+  }
+  .auth_block {
+    display: none;
+  }
+  .auth_block.active {
+    display: block;
+  }
+  @keyframes authContentAcitve {
+    from {
+      transform: translateX(100vw);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .auth_block.active .auth_block__content {
+    animation: authContentAcitve 0.5s linear 1;
+  }
+  @keyframes authEndActive {
+    from {
+      display: block;
+    }
+    to {
+      display: block;
+    }
+  }
+  .auth_block.end-active {
+    display: none;
+    animation: authEndActive 0.5s linear 1;
+  }
+  @keyframes authContentEndAcitve {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100vw);
+    }
+  }
+  .auth_block.end-active .auth_block__content {
+    animation: authContentEndAcitve 0.5s linear 1;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -2318,6 +2390,9 @@ footer .footer_bottom .footer_pay_in {
     padding: 7px 24px 8px;
     gap: 35px;
   }
+  .product-commentary__item_wrap {
+    gap: 30px;
+  }
   .product-commentary__item_head {
     margin-bottom: 26px;
   }
@@ -2328,6 +2403,83 @@ footer .footer_bottom .footer_pay_in {
   }
   .product-commentary__item_description {
     margin-bottom: 20px;
+  }
+  .auth_block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+  }
+  .auth_block__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.53);
+    z-index: -1;
+  }
+  .auth_block__close {
+    top: -38.44px;
+    right: -21px;
+    transform: translateY(-100%);
+  }
+  .auth_block__content {
+    position: static;
+    width: 100%;
+    height: 768px;
+  }
+  .auth_block__content_in {
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .about_author {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .about_author h2 {
+    font-size: 20px;
+  }
+  .about_author h3 {
+    font-size: 16px;
+  }
+  .about_author p {
+    font-size: 16px;
+  }
+  .about_author__left {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .about_author__left h2 {
+    display: block;
+  }
+  .about_author__left img {
+    width: 210px;
+  }
+  .about_author__right {
+    gap: 10px;
+  }
+  .about_author__right h2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) and (max-height: 750px) {
+  .auth_block {
+    display: block;
+  }
+  .auth_block__content {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .auth_block__content_in {
+    height: 670px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -2439,6 +2591,31 @@ footer .footer_bottom .footer_pay_in {
   .product-card__right_foot .main_btn svg {
     width: 17.5px;
     height: auto;
+  }
+  .about_author {
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .about_author h2 {
+    font-size: 16px;
+  }
+  .about_author h3 {
+    font-size: 14px;
+  }
+  .about_author p {
+    font-size: 14px;
+  }
+  .about_author__left {
+    flex-direction: column;
+  }
+  .about_author__left img {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 @media only screen and (max-width: 620px) {
@@ -2637,6 +2814,61 @@ footer .footer_bottom .footer_pay_in {
   .main_breadcrumbs ul .active span {
     font-size: 12px;
   }
+  .auth_block__content {
+    height: 648px;
+    padding: 0;
+  }
+  .auth_block__content input {
+    font-size: 14px;
+  }
+  .auth_block__content_in {
+    width: 100%;
+    padding: 95px 0 20px;
+  }
+  .auth_block__content .form_btn {
+    padding: 13px 0 12px;
+    font-size: 16px;
+  }
+  .auth_block__content p, .auth_block__content a {
+    font-size: 14px;
+  }
+  .auth_block__content .networks__text {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .auth_block__close {
+    top: 25.62px;
+    right: 25.62px;
+    transform: translate(0);
+  }
+  .auth_block__close svg {
+    width: 18px;
+    height: auto;
+  }
+  .auth_block__btn_group {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+  }
+  .auth_block__btn_group button {
+    padding: 9px 0;
+    font-size: 16px;
+  }
+  .auth_block__register, .auth_block__login,
+  .auth_block .edit_password {
+    padding: 30px 10px 0;
+  }
+}
+@media only screen and (max-width: 576px) and (max-height: 648px) {
+  .auth_block {
+    display: block;
+  }
+  .auth_block__content {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .auth_block__content_in {
+    height: 648px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .filter_modal__content {
@@ -2653,5 +2885,8 @@ footer .footer_bottom .footer_pay_in {
   .filter_modal .main_btn {
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+  .about_author__left img {
+    height: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

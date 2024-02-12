@@ -99,7 +99,7 @@
                             <img src="./images/icons/header_burger.svg" alt="">
                         </button>
                         <li class="header_bottom_item">
-                            <a href="#">
+                            <a href="#" class="auth_block__open">
                                 <img src="./images/icons/header_user.svg" alt="">
                                 <span>
                                     Вход
@@ -150,94 +150,97 @@
         <section class="main_container auth_block">
             <div class="auth_block__bg"></div>
             <div class="auth_block__content">
-                <button class="auth_block__close">
-                    <svg width="28.126953" height="28.126465" viewBox="0 0 28.127 28.1265" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path id="Vector" d="M27.7148 25.7246C27.8447 25.8555 27.9492 26.0103 28.0195 26.1812C28.0898 26.3516 28.127 26.5347 28.127 26.7197C28.127 26.9043 28.0898 27.0874 28.0195 27.2578C27.9492 27.4287 27.8447 27.584 27.7148 27.7144C27.584 27.8452 27.4287 27.9487 27.2578 28.0195C27.0869 28.0903 26.9043 28.1265 26.7197 28.1265C26.5352 28.1265 26.3516 28.0903 26.1807 28.0195C26.0107 27.9487 25.8555 27.8452 25.7246 27.7144L14.0635 16.0513L2.40234 27.7144C2.1377 27.9785 1.78027 28.1265 1.40723 28.1265C1.03418 28.1265 0.675781 27.9785 0.412109 27.7144C0.148438 27.4507 0 27.0928 0 26.7197C0 26.3462 0.148438 25.9883 0.412109 25.7246L12.0752 14.0635L0.412109 2.40186C0.148438 2.13818 0 1.78027 0 1.40723C0 1.03369 0.148438 0.675781 0.412109 0.412109C0.675781 0.148438 1.03418 0 1.40723 0C1.78027 0 2.1377 0.148438 2.40234 0.412109L14.0635 12.0752L25.7246 0.412109C25.9883 0.148438 26.3467 0 26.7197 0C27.0928 0 27.4502 0.148438 27.7148 0.412109C27.9785 0.675781 28.127 1.03369 28.127 1.40723C28.127 1.78027 27.9785 2.13818 27.7148 2.40186L16.0518 14.0635L27.7148 25.7246Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-                    </svg>
-                </button>
-
-                <div class="swiper auth_block__parent_slider">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="auth_block__btn_group">
-                                <button class="main_btn active">Регистрация</button>
-                                <button class="main_btn">Вход</button>
-                            </div>
-
-                            <div class="swiper auth_block__child_slider">
-                                <div class="swiper-wrapper">
-
-                                    <!-- Register block -->
-                                    <div class="swiper-slide">
-                                        <div class="auth_block__register">
-                                            <input type="email" placeholder="E-mail">
-                                            <input type="password" placeholder="Пароль">
-                                            <button class="form_btn disable">Зарегистрироваться</button>
-                                            <p>Нажимая кнопку «Зарегистрироваться», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</p>
-                                            <div class="networks">
-                                                <div class="networks__text">Или войдите в систему через социальные сети</div>
-                                                <a href="#">
-                                                    <img src="./images/icons/vkontact.svg" alt="">
-                                                </a>
+                <div class="auth_block__content_in">
+                    <button class="auth_block__close">
+                        <svg width="28.126953" height="28.126465" viewBox="0 0 28.127 28.1265" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path id="Vector" d="M27.7148 25.7246C27.8447 25.8555 27.9492 26.0103 28.0195 26.1812C28.0898 26.3516 28.127 26.5347 28.127 26.7197C28.127 26.9043 28.0898 27.0874 28.0195 27.2578C27.9492 27.4287 27.8447 27.584 27.7148 27.7144C27.584 27.8452 27.4287 27.9487 27.2578 28.0195C27.0869 28.0903 26.9043 28.1265 26.7197 28.1265C26.5352 28.1265 26.3516 28.0903 26.1807 28.0195C26.0107 27.9487 25.8555 27.8452 25.7246 27.7144L14.0635 16.0513L2.40234 27.7144C2.1377 27.9785 1.78027 28.1265 1.40723 28.1265C1.03418 28.1265 0.675781 27.9785 0.412109 27.7144C0.148438 27.4507 0 27.0928 0 26.7197C0 26.3462 0.148438 25.9883 0.412109 25.7246L12.0752 14.0635L0.412109 2.40186C0.148438 2.13818 0 1.78027 0 1.40723C0 1.03369 0.148438 0.675781 0.412109 0.412109C0.675781 0.148438 1.03418 0 1.40723 0C1.78027 0 2.1377 0.148438 2.40234 0.412109L14.0635 12.0752L25.7246 0.412109C25.9883 0.148438 26.3467 0 26.7197 0C27.0928 0 27.4502 0.148438 27.7148 0.412109C27.9785 0.675781 28.127 1.03369 28.127 1.40723C28.127 1.78027 27.9785 2.13818 27.7148 2.40186L16.0518 14.0635L27.7148 25.7246Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        </svg>
+                    </button>
+    
+                    <div class="swiper auth_block__parent_slider">
+                        <div class="swiper-wrapper">
+    
+                            <div class="swiper-slide">
+                                <div class="auth_block__btn_group">
+                                    <button class="main_btn active">Регистрация</button>
+                                    <button class="main_btn">Вход</button>
+                                </div>
+    
+                                <div class="swiper auth_block__child_slider">
+                                    <div class="swiper-wrapper">
+    
+                                        <!-- Register block -->
+                                        <div class="swiper-slide">
+                                            <div class="auth_block__register">
+                                                <input type="email" placeholder="E-mail">
+                                                <input type="password" placeholder="Пароль">
+                                                <button class="form_btn disable">Зарегистрироваться</button>
+                                                <p>Нажимая кнопку «Зарегистрироваться», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</p>
+                                                <div class="networks">
+                                                    <div class="networks__text">Или войдите в систему через социальные сети</div>
+                                                    <a href="#">
+                                                        <img src="./images/icons/vkontact.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Register block end -->
-
-                                    <!-- Login block -->
-                                    <div class="swiper-slide">
-                                        <div class="auth_block__login">
-                                            <input type="email" placeholder="Логин или E-mail">
-                                            <input type="password" placeholder="Пароль">
-                                            <button class="form_btn disable">Войти</button>
-                                            <p>Вспомнить пароль</p>
-                                            <div class="networks">
-                                                <div class="networks__text">Или войдите в систему через социальные сети</div>
-                                                <a href="#">
-                                                    <img src="./images/icons/vkontact.svg" alt="">
-                                                </a>
+                                        <!-- Register block end -->
+    
+                                        <!-- Login block -->
+                                        <div class="swiper-slide">
+                                            <div class="auth_block__login">
+                                                <input type="email" placeholder="Логин или E-mail">
+                                                <input type="password" placeholder="Пароль">
+                                                <button class="form_btn disable">Войти</button>
+                                                <p>Вспомнить пароль</p>
+                                                <div class="networks">
+                                                    <div class="networks__text">Или войдите в систему через социальные сети</div>
+                                                    <a href="#">
+                                                        <img src="./images/icons/vkontact.svg" alt="">
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <!-- Login block end -->
+    
                                     </div>
-                                    <!-- Login block end -->
-
                                 </div>
                             </div>
-                        </div>
-                        
-                        <!-- Edit password -->
-                        <div class="swiper-slide">
-                            <div class="edit_password">
-                                <h3>Восстановление пароля</h3>
-                                <input type="email" placeholder="Логин или E-mail">
-                                <button class="form_btn disable">Восстановить</button>
-                                <button class="edit_link">Вспомнили пароль?</button>
+                            
+                            <!-- Edit password -->
+                            <div class="swiper-slide">
+                                <div class="edit_password">
+                                    <h3>Восстановление пароля</h3>
+                                    <input type="email" placeholder="Логин или E-mail">
+                                    <button class="form_btn disable">Восстановить</button>
+                                    <button class="edit_link">Вспомнили пароль?</button>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="edit_password">
-                                <h3>Восстановление пароля</h3>
-                                <input type="email" placeholder="Логин или E-mail">
-                                <input type="password" placeholder="Новый пароль">
-                                <input type="password" placeholder="Подтвердите пароль">
-                                <button class="form_btn disable">Изминить пароль</button>
-                                <p>Пароль должен быть не менее 6 символов длиной</p>
+    
+                            <div class="swiper-slide">
+                                <div class="edit_password">
+                                    <h3>Восстановление пароля</h3>
+                                    <input type="email" placeholder="Логин или E-mail">
+                                    <input type="password" placeholder="Новый пароль">
+                                    <input type="password" placeholder="Подтвердите пароль">
+                                    <button class="form_btn disable">Изминить пароль</button>
+                                    <p>Пароль должен быть не менее 6 символов длиной</p>
+                                </div>
                             </div>
+                            <!-- Edit password end -->
                         </div>
-                        <!-- Edit password end -->
                     </div>
-                </div>
-
-                <div class="auth_block__continue">
-                    <div class="icon">
-                        <svg width="62.502930" height="45.003418" viewBox="0 0 62.5029 45.0034" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path id="Vector" d="M61.77 4.27002L21.77 44.27C21.5381 44.5024 21.2622 44.687 20.9585 44.813C20.6553 44.9385 20.3301 45.0034 20.0015 45.0034C19.6729 45.0034 19.3477 44.9385 19.0439 44.813C18.7407 44.687 18.4648 44.5024 18.2324 44.27L0.732422 26.77C0.263672 26.3013 0 25.665 0 25.0015C0 24.3379 0.263672 23.7017 0.732422 23.2324C1.20166 22.7637 1.83789 22.5 2.50146 22.5C3.16504 22.5 3.80127 22.7637 4.27002 23.2324L20.0015 38.9668L58.2324 0.732422C58.7017 0.263672 59.3379 0 60.0015 0C60.665 0 61.3013 0.263672 61.77 0.732422C62.2393 1.20166 62.5029 1.83789 62.5029 2.50146C62.5029 3.16504 62.2393 3.80127 61.77 4.27002Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
-                        </svg>
+    
+                    <div class="auth_block__continue">
+                        <div class="icon">
+                            <svg width="62.502930" height="45.003418" viewBox="0 0 62.5029 45.0034" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="Vector" d="M61.77 4.27002L21.77 44.27C21.5381 44.5024 21.2622 44.687 20.9585 44.813C20.6553 44.9385 20.3301 45.0034 20.0015 45.0034C19.6729 45.0034 19.3477 44.9385 19.0439 44.813C18.7407 44.687 18.4648 44.5024 18.2324 44.27L0.732422 26.77C0.263672 26.3013 0 25.665 0 25.0015C0 24.3379 0.263672 23.7017 0.732422 23.2324C1.20166 22.7637 1.83789 22.5 2.50146 22.5C3.16504 22.5 3.80127 22.7637 4.27002 23.2324L20.0015 38.9668L58.2324 0.732422C58.7017 0.263672 59.3379 0 60.0015 0C60.665 0 61.3013 0.263672 61.77 0.732422C62.2393 1.20166 62.5029 1.83789 62.5029 2.50146C62.5029 3.16504 62.2393 3.80127 61.77 4.27002Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+                        </div>
+                        <p>Регистрация прошла успешно</p>
+                        <p>Ваш пароль успешно восстановлен</p>
+                        <button class="form_btn">Продолжить</button>
                     </div>
-                    <p>Регистрация прошла успешно</p>
-                    <button class="form_btn">Продолжить</button>
                 </div>
             </div>
         </section>
