@@ -1010,6 +1010,27 @@ footer .footer_bottom .footer_pay_in {
   width: 100%;
 }
 
+.series .series_cards {
+  margin: 50px 0 80px 0;
+}
+.series .series_card {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+.series .series_card img {
+  width: 100%;
+}
+.series .series_card a {
+  margin: 15px 10px 20px 10px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  border-bottom: 1px solid;
+}
+
 @media only screen and (max-width: 1100px) {
   .main_container {
     padding: 0 48px;
@@ -1518,6 +1539,19 @@ footer .footer_bottom .footer_pay_in {
     font-size: 14px;
     height: 32px;
     font-weight: 400;
+  }
+  .series .series_cards {
+    margin: 40px 0;
+  }
+  .series .series_cards .col-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .series .series_card a {
+    margin: 10px 10px 20px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
   }
 }
 @media only screen and (max-width: 600px) {

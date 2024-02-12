@@ -725,6 +725,27 @@
         }
     }
 
+    .series {
+
+        .series_cards {
+            margin: 40px 0;
+
+            .col-6 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .series_card {
+            a {
+                margin: 10px 10px 20px 10px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 140%;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
