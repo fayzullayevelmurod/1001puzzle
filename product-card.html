@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1001puzzle</title>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper js -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- css link -->
+</head>
+<body>
+    <div class="wrapper home">
+        <!-- header -->
+        <header>
+            <div class="main_container">
+                <div class="header_top">
+                    <div class="header_top_left">
+                        <nav>
+                            <ul class="nav_link">
+                                <li class="nav_item">
+                                    <a href="#">
+                                        <img src="./images/icons/header_mail.svg" alt="">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">
+                                        <img src="./images/icons/header_about.svg" alt="">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">
+                                        <img src="./images/icons/header_car.svg" alt="">
+                                        Доставка
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header_top_right">
+                        <div class="header_phone" href="#">
+                            <img src="./images/icons/header_phone.svg" alt="">
+                            <div class="header_number">
+                                <a href="tel:+74959688001">
+                                    +7(495) 968 80-01
+                                </a>
+                                <a href="tel:+74957929001">
+                                    +7(495) 792 90-01
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header_flags">
+                            <a href="#">
+                                <img src="./images/icons/flag_ru.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/flag_eng.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/flag_vk.svg" alt="">
+                            </a>
+                        </div>
+                        <button class="header_feedback main_btn">
+                            Обратная связь
+                        </button>
+                    </div>
+                </div>
+                <div class="header_bottom">
+                    <a href="./index.html" class="logo">
+                        <img src="./images/logo/header_logo.svg" alt="">
+                    </a>
+                    <div class="header_search">
+                        <button class="catalog_btn">
+                            <img src="./images/icons/header_catalog.svg" alt="">
+                            Каталог
+                        </button>
+                        <input id="search" autocomplete="off" type="text" placeholder="Поиск">
+                        <label for="search">
+                            <img src="./images/icons/header_search.svg" alt="">
+                        </label>
+                    </div>
+                    <ul class="header_bottom_link">
+                        <button class="media_btn">
+                            <img src="./images/icons/header_burger.svg" alt="">
+                        </button>
+                        <li class="header_bottom_item">
+                            <a href="#" class="auth_block__open">
+                                <img src="./images/icons/header_user.svg" alt="">
+                                <span>
+                                    Вход
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header_bottom_item heart_btn">
+                            <a href="#">
+                                <img src="./images/icons/header_heart.svg" alt="">
+                                <span>
+                                    Избранное
+                                </span>
+                            </a>
+                            <span class="number">
+                                12
+                            </span>
+                        </li>
+                        <li class="header_bottom_item shop_btn">
+                            <a href="#">
+                                <img src="./images/icons/header_shop.svg" alt="">
+                                <span>
+                                    Корзина
+                                </span>
+                            </a>
+                            <span class="number">
+                                2
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_search_media">
+                    <button class="catalog_btn">
+                        <img src="./images/icons/header_catalog.svg" alt="">
+                        <span>
+                            Каталог
+                        </span>
+                    </button>
+                    <input id="search" autocomplete="off" type="text" placeholder="Поиск">
+                    <label for="search">
+                        <img src="./images/icons/header_search.svg" alt="">
+                    </label>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- Auth block -->
+        <section class="main_container auth_block">
+            <div class="auth_block__bg"></div>
+            <div class="auth_block__content">
+                <div class="auth_block__content_in">
+                    <button class="auth_block__close">
+                        <svg width="28.126953" height="28.126465" viewBox="0 0 28.127 28.1265" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path id="Vector" d="M27.7148 25.7246C27.8447 25.8555 27.9492 26.0103 28.0195 26.1812C28.0898 26.3516 28.127 26.5347 28.127 26.7197C28.127 26.9043 28.0898 27.0874 28.0195 27.2578C27.9492 27.4287 27.8447 27.584 27.7148 27.7144C27.584 27.8452 27.4287 27.9487 27.2578 28.0195C27.0869 28.0903 26.9043 28.1265 26.7197 28.1265C26.5352 28.1265 26.3516 28.0903 26.1807 28.0195C26.0107 27.9487 25.8555 27.8452 25.7246 27.7144L14.0635 16.0513L2.40234 27.7144C2.1377 27.9785 1.78027 28.1265 1.40723 28.1265C1.03418 28.1265 0.675781 27.9785 0.412109 27.7144C0.148438 27.4507 0 27.0928 0 26.7197C0 26.3462 0.148438 25.9883 0.412109 25.7246L12.0752 14.0635L0.412109 2.40186C0.148438 2.13818 0 1.78027 0 1.40723C0 1.03369 0.148438 0.675781 0.412109 0.412109C0.675781 0.148438 1.03418 0 1.40723 0C1.78027 0 2.1377 0.148438 2.40234 0.412109L14.0635 12.0752L25.7246 0.412109C25.9883 0.148438 26.3467 0 26.7197 0C27.0928 0 27.4502 0.148438 27.7148 0.412109C27.9785 0.675781 28.127 1.03369 28.127 1.40723C28.127 1.78027 27.9785 2.13818 27.7148 2.40186L16.0518 14.0635L27.7148 25.7246Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        </svg>
+                    </button>
+    
+                    <div class="swiper auth_block__parent_slider">
+                        <div class="swiper-wrapper">
+    
+                            <div class="swiper-slide">
+                                <div class="auth_block__btn_group">
+                                    <button class="main_btn active">Регистрация</button>
+                                    <button class="main_btn">Вход</button>
+                                </div>
+    
+                                <div class="swiper auth_block__child_slider">
+                                    <div class="swiper-wrapper">
+    
+                                        <!-- Register block -->
+                                        <div class="swiper-slide">
+                                            <div class="auth_block__register">
+                                                <input type="email" placeholder="E-mail">
+                                                <input type="password" placeholder="Пароль">
+                                                <button class="form_btn disable">Зарегистрироваться</button>
+                                                <p>Нажимая кнопку «Зарегистрироваться», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</p>
+                                                <div class="networks">
+                                                    <div class="networks__text">Или войдите в систему через социальные сети</div>
+                                                    <a href="#">
+                                                        <img src="./images/icons/vkontact.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Register block end -->
+    
+                                        <!-- Login block -->
+                                        <div class="swiper-slide">
+                                            <div class="auth_block__login">
+                                                <input type="email" placeholder="Логин или E-mail">
+                                                <input type="password" placeholder="Пароль">
+                                                <button class="form_btn disable">Войти</button>
+                                                <p>Вспомнить пароль</p>
+                                                <div class="networks">
+                                                    <div class="networks__text">Или войдите в систему через социальные сети</div>
+                                                    <a href="#">
+                                                        <img src="./images/icons/vkontact.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Login block end -->
+    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Edit password -->
+                            <div class="swiper-slide">
+                                <div class="edit_password">
+                                    <h3>Восстановление пароля</h3>
+                                    <input type="email" placeholder="Логин или E-mail">
+                                    <button class="form_btn disable">Восстановить</button>
+                                    <button class="edit_link">Вспомнили пароль?</button>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="edit_password">
+                                    <h3>Восстановление пароля</h3>
+                                    <input type="email" placeholder="Логин или E-mail">
+                                    <input type="password" placeholder="Новый пароль">
+                                    <input type="password" placeholder="Подтвердите пароль">
+                                    <button class="form_btn disable">Изминить пароль</button>
+                                    <p>Пароль должен быть не менее 6 символов длиной</p>
+                                </div>
+                            </div>
+                            <!-- Edit password end -->
+                        </div>
+                    </div>
+    
+                    <div class="auth_block__continue">
+                        <div class="icon">
+                            <svg width="62.502930" height="45.003418" viewBox="0 0 62.5029 45.0034" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="Vector" d="M61.77 4.27002L21.77 44.27C21.5381 44.5024 21.2622 44.687 20.9585 44.813C20.6553 44.9385 20.3301 45.0034 20.0015 45.0034C19.6729 45.0034 19.3477 44.9385 19.0439 44.813C18.7407 44.687 18.4648 44.5024 18.2324 44.27L0.732422 26.77C0.263672 26.3013 0 25.665 0 25.0015C0 24.3379 0.263672 23.7017 0.732422 23.2324C1.20166 22.7637 1.83789 22.5 2.50146 22.5C3.16504 22.5 3.80127 22.7637 4.27002 23.2324L20.0015 38.9668L58.2324 0.732422C58.7017 0.263672 59.3379 0 60.0015 0C60.665 0 61.3013 0.263672 61.77 0.732422C62.2393 1.20166 62.5029 1.83789 62.5029 2.50146C62.5029 3.16504 62.2393 3.80127 61.77 4.27002Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+                        </div>
+                        <p>Регистрация прошла успешно</p>
+                        <p>Ваш пароль успешно восстановлен</p>
+                        <button class="form_btn">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Auth block end -->
+
+        <!-- Main breadcrumb -->
+        <section class="main_breadcrumbs">
+            <div class="main_container">
+                <ul class="d-flex align-items-center">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <svg width="7.500732" height="13.750488" viewBox="0 0 7.50073 13.7505" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs/>
+                            <path id="Vector" d="M7.31763 7.31738L1.06763 13.5674C1.00952 13.6255 0.94043 13.6719 0.864746 13.7031C0.788818 13.7344 0.70752 13.7505 0.625244 13.7505C0.543213 13.7505 0.461914 13.7344 0.385986 13.7031C0.310059 13.6719 0.241211 13.6255 0.183105 13.5674C0.125 13.5093 0.0791016 13.4404 0.0476074 13.3647C0.0161133 13.2886 0 13.2075 0 13.1255C0 13.0435 0.0161133 12.9619 0.0476074 12.8862C0.0791016 12.8101 0.125 12.7412 0.183105 12.6831L5.9917 6.87549L0.183105 1.06738C0.065918 0.950195 0 0.791016 0 0.625488C0 0.459473 0.065918 0.300293 0.183105 0.183105C0.300537 0.065918 0.459473 0 0.625244 0C0.79126 0 0.950195 0.065918 1.06763 0.183105L7.31763 6.43311C7.37573 6.49121 7.42163 6.56006 7.45312 6.63623C7.48462 6.71191 7.50073 6.79346 7.50073 6.87549C7.50073 6.95752 7.48462 7.03857 7.45312 7.11475C7.42163 7.19043 7.37573 7.25928 7.31763 7.31738Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        </svg>
+                    </li>
+                    <li class="active">
+                        <span>Пазлы со скидкой</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Main breadcrumb end -->
+
+        <div class="main_container">
+
+                <!-- Product card home -->
+                <div class="product-card">
+
+                    <div class="product-card__left">
+
+                        <div class="swiper product-card__parent_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="discount">
+                                        <img src="./images/icons/discount_red.svg" alt="">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="./images/product_card_1.png" class="main_img" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="discount">
+                                        <img src="./images/icons/discount_red.svg" alt="">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="./images/product_card_1.png" class="main_img" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="discount">
+                                        <img src="./images/icons/discount_red.svg" alt="">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="./images/product_card_1.png" class="main_img" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="discount">
+                                        <img src="./images/icons/discount_red.svg" alt="">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="./images/product_card_1.png" class="main_img" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="discount">
+                                        <img src="./images/icons/discount_red.svg" alt="">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="./images/product_card_1.png" class="main_img" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="discount">
+                                        <img src="./images/icons/discount_red.svg" alt="">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="./images/product_card_1.png" class="main_img" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between child_slider__wrap">
+                            <button class="product-card__child_slider__btn_prev">
+                                <svg width="48.750000" height="48.750000" viewBox="0 0 48.75 48.75" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="Vector" d="M24.375 0C19.5542 0 14.8413 1.42969 10.833 4.10791C6.82471 6.78613 3.7002 10.5933 1.85547 15.0469C0.0107422 19.501 -0.472168 24.4019 0.468262 29.1304C1.40869 33.8584 3.73047 38.2017 7.13916 41.6108C10.5483 45.0195 14.8916 47.3413 19.6196 48.2817C24.3481 49.2222 29.249 48.7393 33.7031 46.8945C38.1567 45.0498 41.9639 41.9253 44.6421 37.917C47.3203 33.9087 48.75 29.1958 48.75 24.375C48.7432 17.9126 46.1729 11.7163 41.603 7.14697C37.0337 2.57715 30.8374 0.00683594 24.375 0ZM24.375 45C20.2959 45 16.3081 43.7905 12.9165 41.5239C9.52441 39.2578 6.88086 36.0366 5.31982 32.2681C3.75879 28.499 3.35059 24.3521 4.14648 20.3511C4.94189 16.3506 6.90625 12.6753 9.79102 9.79102C12.6753 6.90625 16.3506 4.94189 20.3511 4.14648C24.3521 3.35059 28.499 3.75879 32.2681 5.31982C36.0366 6.88086 39.2578 9.52441 41.5239 12.9165C43.7905 16.3081 45 20.2959 45 24.375C44.9937 29.8433 42.8188 35.0854 38.9521 38.9521C35.0854 42.8188 29.8433 44.9937 24.375 45ZM35.625 24.375C35.625 24.8721 35.4272 25.3491 35.0757 25.7007C34.7241 26.0522 34.2471 26.25 33.75 26.25L19.5259 26.25L23.8267 30.5483C24.001 30.7227 24.1392 30.9297 24.2334 31.1572C24.3276 31.3848 24.376 31.6284 24.376 31.875C24.376 32.1216 24.3276 32.3652 24.2334 32.5928C24.1392 32.8203 24.001 33.0273 23.8267 33.2017C23.6523 33.376 23.4453 33.5142 23.2178 33.6084C22.9902 33.7026 22.7466 33.751 22.5 33.751C22.2534 33.751 22.0098 33.7026 21.7822 33.6084C21.5547 33.5142 21.3477 33.376 21.1733 33.2017L13.6733 25.7017C13.499 25.5273 13.3608 25.3208 13.2666 25.0928C13.1719 24.8652 13.1235 24.6216 13.1235 24.375C13.1235 24.1284 13.1719 23.8848 13.2666 23.6572C13.3608 23.4292 13.499 23.2227 13.6733 23.0483L21.1733 15.5483C21.5254 15.1968 22.0024 14.999 22.5 14.999C22.9976 14.999 23.4746 15.1968 23.8267 15.5483C24.1782 15.9004 24.376 16.3774 24.376 16.875C24.376 17.3726 24.1782 17.8496 23.8267 18.2017L19.5259 22.5L33.75 22.5C34.2471 22.5 34.7241 22.6978 35.0757 23.0493C35.4272 23.4009 35.625 23.8779 35.625 24.375Z" fill="#989292" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </svg>
+                            </button>
+                            <div thumbsSlider="" class="swiper product-card__child_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/product_card_1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/product_card_1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/product_card_1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/product_card_1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/product_card_1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/product_card_1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="product-card__child_slider__btn_next">
+                                <svg width="48.750000" height="48.750000" viewBox="0 0 48.75 48.75" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="Vector" d="M24.375 0C19.5542 0 14.8413 1.42969 10.833 4.10791C6.82471 6.78613 3.7002 10.5933 1.85547 15.0469C0.0107422 19.501 -0.472168 24.4019 0.468262 29.1304C1.40869 33.8584 3.73047 38.2017 7.13916 41.6108C10.5483 45.0195 14.8916 47.3413 19.6196 48.2817C24.3481 49.2222 29.249 48.7393 33.7031 46.8945C38.1567 45.0498 41.9639 41.9253 44.6421 37.917C47.3203 33.9087 48.75 29.1958 48.75 24.375C48.7432 17.9126 46.1729 11.7163 41.603 7.14697C37.0337 2.57715 30.8374 0.00683594 24.375 0ZM24.375 45C20.2959 45 16.3081 43.7905 12.9165 41.5239C9.52441 39.2578 6.88086 36.0366 5.31982 32.2681C3.75879 28.499 3.35059 24.3521 4.14648 20.3511C4.94189 16.3506 6.90625 12.6753 9.79102 9.79102C12.6753 6.90625 16.3506 4.94189 20.3511 4.14648C24.3521 3.35059 28.499 3.75879 32.2681 5.31982C36.0366 6.88086 39.2578 9.52441 41.5239 12.9165C43.7905 16.3081 45 20.2959 45 24.375C44.9937 29.8433 42.8188 35.0854 38.9521 38.9521C35.0854 42.8188 29.8433 44.9937 24.375 45ZM35.0767 23.0483C35.251 23.2227 35.3892 23.4292 35.4834 23.6572C35.5781 23.8848 35.6265 24.1284 35.6265 24.375C35.6265 24.6216 35.5781 24.8652 35.4834 25.0928C35.3892 25.3208 35.251 25.5273 35.0767 25.7017L27.5767 33.2017C27.2246 33.5532 26.7476 33.751 26.25 33.751C25.7524 33.751 25.2754 33.5532 24.9233 33.2017C24.5718 32.8496 24.374 32.3726 24.374 31.875C24.374 31.3774 24.5718 30.9004 24.9233 30.5483L29.2241 26.25L15 26.25C14.5029 26.25 14.0259 26.0522 13.6743 25.7007C13.3228 25.3491 13.125 24.8721 13.125 24.375C13.125 23.8779 13.3228 23.4009 13.6743 23.0493C14.0259 22.6978 14.5029 22.5 15 22.5L29.2241 22.5L24.9233 18.2017C24.5718 17.8496 24.374 17.3726 24.374 16.875C24.374 16.3774 24.5718 15.9004 24.9233 15.5483C25.2754 15.1968 25.7524 14.999 26.25 14.999C26.7476 14.999 27.2246 15.1968 27.5767 15.5483L35.0767 23.0483Z" fill="#989292" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <p class="description">
+                            Пазлы – это увлекательное хобби для всей семьи, позволяющие увидеть весь мир, не выходя из дома. Яркие изображения пазлов познакомят со знаменитыми картинами великих мастеров, позволят увидеть известные памятники архитектуры, напомнят о любимых сказочных и мультипликационных героях. Пазлы активно развивают мышление, внимание и память.Компания Step Puzzle гарантирует высокое качество каждого пазла и точность подгонки. Вся наша продукция выполнена из высококачественного материала, не содержат токсичных материалов.
+                        </p>
+
+                    </div>
+
+                    <div class="product-card__right">
+
+                        <div class="product-card__right_head">
+                            <h2>Пазл Schmidt 1000 деталей: Ч.В. Кот в садовом сарайчике</h2>
+                            <button class="main_btn card_like">
+                                <svg width="28.000000" height="23.994385" viewBox="0 0 28 23.9944" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="Vector" d="M20.25 0C17.668 0 15.4082 1.11011 14 2.98633C12.5918 1.11011 10.332 0 7.75 0C5.69531 0.00219727 3.72461 0.81958 2.27344 2.27246C0.820312 3.72534 0.00195312 5.69531 0 7.75C0 16.5 12.9746 23.5825 13.5254 23.875C13.6719 23.9534 13.834 23.9944 14 23.9944C14.166 23.9944 14.3281 23.9534 14.4746 23.875C15.0254 23.5825 28 16.5 28 7.75C27.998 5.69531 27.1797 3.72534 25.7266 2.27246C24.2754 0.81958 22.3047 0.00219727 20.25 0ZM14 21.8501C11.7168 20.52 2 14.4612 2 7.75C2.00195 6.22559 2.60938 4.76416 3.68555 3.68628C4.76367 2.6084 6.22656 2.00195 7.75 2C10.1816 2 12.2227 3.29492 13.0742 5.375C13.1504 5.55835 13.2793 5.71533 13.4434 5.82568C13.6074 5.93604 13.8008 5.99512 14 5.99512C14.1992 5.99512 14.3926 5.93604 14.5566 5.82568C14.7207 5.71533 14.8496 5.55835 14.9258 5.375C15.7773 3.29126 17.8184 2 20.25 2C21.7734 2.00195 23.2363 2.6084 24.3145 3.68628C25.3906 4.76416 25.998 6.22559 26 7.75C26 14.4512 16.2793 20.5188 14 21.8501Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </svg>
+                                <img src="./images/icons/heart_active.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between product-card__right_comment">
+                            <div class="d-flex align-items-start product-card__right_comment__text active">
+                                <div class="d-flex align-items-center stars">
+                                    <button class="active">
+                                        <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        </svg>
+                                    </button>
+                                    <button class="active">
+                                        <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        </svg>
+                                    </button>
+                                    <button class="active">
+                                        <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        </svg>
+                                    </button>
+                                    <button class="active">
+                                        <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        </svg>
+                                    </button>
+                                    <button class="active">
+                                        <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <span>(10 отзывов)</span>
+                            </div>
+                            <a href="#" class="card_subtitle active">В наличии</a>
+                        </div>
+
+                        <ul class="d-flex flex-column product-card__right__datas">
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Артикул:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">59992</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Размер пазла:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">69.3x49.3</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Тема:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">Животные</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Стиль:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">Картины</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Производитель:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">
+                                    <a href="#">Schmidt</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Автор:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">
+                                    <a href="#">Charles Wysocki</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Деталей:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">1000</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Страна производства:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">Германия</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Возвраст от:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">10</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Вес:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">0,9 кг</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Материал:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">Картон</div>
+                            </li>
+                            <li class="d-flex align-items-center product-card__right__datas_item">
+                                <div class="key">
+                                    <span>Страна:</span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="value">
+                                    <img src="./images/icons/flag.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex align-items-center justify-content-between product-card__right_foot">
+                            <div class="d-flex align-items-center price">
+                                <span>1 311 ₽</span>
+                                <del>1 410 ₽</del>
+                            </div>
+                            <button class="main_btn">
+                                <svg width="26.248047" height="23.437500" viewBox="0 0 26.248 23.4375" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="Vector" d="M25.7754 6.25781C25.5977 6.05811 25.3789 5.89844 25.1357 5.78955C24.8916 5.68066 24.627 5.62451 24.3594 5.625L18.7441 5.625C18.7441 4.1333 18.1514 2.70264 17.0967 1.64746C16.042 0.592773 14.6113 0 13.1191 0C11.627 0 10.1963 0.592773 9.1416 1.64746C8.08691 2.70264 7.49414 4.1333 7.49414 5.625L1.87793 5.625C1.6123 5.62549 1.35059 5.68262 1.10742 5.7915C0.865234 5.90039 0.648438 6.05957 0.47168 6.25781C0.296875 6.45557 0.165039 6.68799 0.0859375 6.93994C0.00683594 7.19189 -0.0175781 7.45801 0.0126953 7.72021L1.68359 21.7827C1.73828 22.2412 1.95898 22.6631 2.30566 22.9683C2.65137 23.2734 3.09766 23.4409 3.55859 23.4375L22.6895 23.4375C23.1514 23.4409 23.5977 23.2734 23.9434 22.9683C24.2891 22.6631 24.5107 22.2412 24.5645 21.7827L26.2354 7.72021C26.2666 7.45801 26.2412 7.19189 26.1621 6.93994C26.082 6.68799 25.9512 6.45557 25.7754 6.25781ZM13.1191 1.875C14.1133 1.875 15.0674 2.27002 15.7705 2.97314C16.4736 3.67676 16.8691 4.63037 16.8691 5.625L9.36914 5.625C9.36914 4.63037 9.76367 3.67676 10.4678 2.97314C11.1709 2.27002 12.124 1.875 13.1191 1.875ZM22.7002 21.5625C22.6973 21.564 22.6934 21.564 22.6895 21.5625L3.53906 21.5625L1.87793 7.5L7.49414 7.5L7.49414 10.3125C7.49414 10.561 7.59277 10.7998 7.76855 10.9756C7.94434 11.1514 8.18262 11.25 8.43164 11.25C8.67969 11.25 8.91895 11.1514 9.09473 10.9756C9.27051 10.7998 9.36914 10.561 9.36914 10.3125L9.36914 7.5L16.8691 7.5L16.8691 10.3125C16.8691 10.561 16.9678 10.7998 17.1436 10.9756C17.3193 11.1514 17.5576 11.25 17.8066 11.25C18.0547 11.25 18.2939 11.1514 18.4697 10.9756C18.6455 10.7998 18.7441 10.561 18.7441 10.3125L18.7441 7.5L24.3691 7.5L22.7002 21.5625Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </svg>
+                                <span>В корзину</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <p class="description">
+                        Пазлы – это увлекательное хобби для всей семьи, позволяющие увидеть весь мир, не выходя из дома. Яркие изображения пазлов познакомят со знаменитыми картинами великих мастеров, позволят увидеть известные памятники архитектуры, напомнят о любимых сказочных и мультипликационных героях. Пазлы активно развивают мышление, внимание и память.Компания Step Puzzle гарантирует высокое качество каждого пазла и точность подгонки. Вся наша продукция выполнена из высококачественного материала, не содержат токсичных материалов.
+                    </p>
+
+                </div>
+                <!-- Product card home end -->
+
+                <!-- Commentary -->
+                <div class="product-commentary">
+                    <div class="d-flex active justify-content-between product-commentary__head">
+                        <h2>Отзывы покупателей</h2>
+                        <a href="#" class="d-flex align-items-center main_btn">
+                            <svg width="24.375000" height="22.500000" viewBox="0 0 24.375 22.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="Vector" d="M22.5 0L1.875 0C1.37793 0 0.900879 0.197754 0.549316 0.549316C0.197754 0.900879 0 1.37793 0 1.875L0 20.625C-0.00195312 20.9824 0.0991211 21.333 0.291016 21.6343C0.48291 21.9355 0.757812 22.1753 1.08301 22.3242C1.33105 22.4395 1.60156 22.4995 1.875 22.5C2.31543 22.499 2.74072 22.3418 3.07617 22.0571C3.08203 22.0532 3.08691 22.0488 3.09131 22.0439L6.85547 18.75L22.5 18.75C22.9971 18.75 23.4746 18.5522 23.8262 18.2007C24.1777 17.8491 24.375 17.3721 24.375 16.875L24.375 1.875C24.375 1.37793 24.1777 0.900879 23.8262 0.549316C23.4746 0.197754 22.9971 0 22.5 0ZM22.5 16.875L6.85547 16.875C6.41406 16.875 5.98633 17.0303 5.64844 17.3145L5.63428 17.3271L1.875 20.625L1.875 1.875L22.5 1.875L22.5 16.875ZM10.7812 9.375C10.7812 9.09668 10.8633 8.8252 11.0186 8.59375C11.1729 8.3623 11.3926 8.18213 11.6494 8.07568C11.9062 7.96924 12.1895 7.94141 12.4619 7.99561C12.7344 8.0498 12.9854 8.18408 13.1816 8.38086C13.3789 8.57715 13.5127 8.82764 13.5664 9.10059C13.6211 9.37354 13.5928 9.65625 13.4863 9.91309C13.3799 10.1699 13.2002 10.3896 12.9688 10.5444C12.7373 10.6987 12.4658 10.7812 12.1875 10.7812C11.8145 10.7812 11.457 10.6333 11.1934 10.3691C10.9297 10.1055 10.7812 9.74805 10.7812 9.375ZM5.625 9.375C5.625 9.09668 5.70752 8.8252 5.86182 8.59375C6.0166 8.3623 6.23633 8.18213 6.49316 8.07568C6.75 7.96924 7.03271 7.94141 7.30566 7.99561C7.57861 8.0498 7.8291 8.18408 8.02588 8.38086C8.22217 8.57715 8.35645 8.82764 8.41064 9.10059C8.46484 9.37354 8.43701 9.65625 8.33057 9.91309C8.22412 10.1699 8.04395 10.3896 7.8125 10.5444C7.58105 10.6987 7.30957 10.7812 7.03125 10.7812C6.6582 10.7812 6.30078 10.6333 6.03711 10.3691C5.77295 10.1055 5.625 9.74805 5.625 9.375ZM15.9375 9.375C15.9375 9.09668 16.0195 8.8252 16.1748 8.59375C16.3291 8.3623 16.5488 8.18213 16.8057 8.07568C17.0625 7.96924 17.3457 7.94141 17.6182 7.99561C17.8906 8.0498 18.1416 8.18408 18.3379 8.38086C18.5352 8.57715 18.6689 8.82764 18.7227 9.10059C18.7773 9.37354 18.749 9.65625 18.6426 9.91309C18.5361 10.1699 18.3564 10.3896 18.125 10.5444C17.8936 10.6987 17.6221 10.7812 17.3438 10.7812C16.9707 10.7812 16.6133 10.6333 16.3496 10.3691C16.0859 10.1055 15.9375 9.74805 15.9375 9.375Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+                            <span>Оставить отзыв</span>
+                        </a>
+                    </div>
+
+                    <div class="product-commentary__item">
+                        <div class="d-flex align-items-center product-commentary__item_head">
+                            <img src="./images/logo/user_log.jpg" alt="">
+                            <span>Ольга</span>
+                        </div>
+
+                        <div class="d-flex align-items-center product-commentary__item_stars">
+                            <div class="d-flex align-items-center stars">
+                                <button class="active">
+                                    <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#FE9B00" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </button>
+                                <button class="active">
+                                    <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#FE9B00" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </button>
+                                <button class="active">
+                                    <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#FE9B00" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </button>
+                                <button class="active">
+                                    <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#FE9B00" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </button>
+                                <button class="active">
+                                    <svg width="16.250977" height="15.631348" viewBox="0 0 16.251 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M8.46924 13.0283L12.4067 15.5283C12.9146 15.8486 13.5396 15.3721 13.3911 14.7861L12.2505 10.3018C12.2197 10.1775 12.2246 10.0469 12.2646 9.92529C12.3047 9.80371 12.3784 9.6958 12.4771 9.61426L16.0083 6.66895C16.4692 6.28613 16.2349 5.5127 15.6333 5.47363L11.0239 5.17676C10.8984 5.16943 10.7773 5.12573 10.6763 5.05078C10.5747 4.97583 10.4976 4.87305 10.4536 4.75488L8.73486 0.426758C8.68945 0.301758 8.60645 0.193604 8.49756 0.117188C8.38867 0.0410156 8.25879 0 8.12549 0C7.99268 0 7.86279 0.0410156 7.75342 0.117188C7.64453 0.193604 7.56152 0.301758 7.51611 0.426758L5.79736 4.75488C5.75391 4.87305 5.67627 4.97583 5.5752 5.05078C5.47363 5.12573 5.35303 5.16943 5.22705 5.17676L0.617676 5.47363C0.0161133 5.5127 -0.218262 6.28613 0.242676 6.66895L3.77393 9.61426C3.87256 9.6958 3.94629 9.80371 3.98633 9.92529C4.02637 10.0469 4.03125 10.1775 4.00049 10.3018L2.9458 14.458C2.76611 15.1611 3.51611 15.7314 4.11768 15.3486L7.78174 13.0283C7.88477 12.9629 8.00391 12.9282 8.12549 12.9282C8.24756 12.9282 8.3667 12.9629 8.46924 13.0283Z" fill="#FE9B00" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <span>23 октября 2023</span>
+                        </div>
+
+                        <div class="product-commentary__item_type">Опыт использования товара: Несколько месяцев</div>
+
+                        <div class="product-commentary__item_description">
+                            Мой любимый цвет! Мой любимый размер:) Обожаю эти мультяшные картинки. Они такие уютные и умиротворяющие... И хотя Ravensburger не входит в число моих любимых производителей пазлов, я очень благодарна ему за эту мультяшную серию. Качество классического Равенсбургера: отличная полиграфия, без недорезов и взаимозаменяемости, но слишком выпуклые детальки, из-за чего получается смазанной готовая картинка и довольно много пыли. И собирается очень быстро. Жаль, что нет мультяшных пазлов на 1500 или 2000 деталек.
+                        </div>
+
+                        <img src="./images/commentary_card.png" class="product-commentary__item_img" alt="">
+                    </div>
+                </div>
+                <!-- Commentary end -->
+
+                <!-- Product slider -->
+                <section class="product-slider product">
+                    <h2 class="title">Похожие пазлы</h2>
+
+                    <div class="product-slider__card">
+
+                        <div class="d-flex flex-wrap product-slider__card_wrap">
+
+                            <div class="product-slider__card_item">
+                                <button class="main_btn card_like">
+                                    <svg width="28.000000" height="23.994385" viewBox="0 0 28 23.9944" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M20.25 0C17.668 0 15.4082 1.11011 14 2.98633C12.5918 1.11011 10.332 0 7.75 0C5.69531 0.00219727 3.72461 0.81958 2.27344 2.27246C0.820312 3.72534 0.00195312 5.69531 0 7.75C0 16.5 12.9746 23.5825 13.5254 23.875C13.6719 23.9534 13.834 23.9944 14 23.9944C14.166 23.9944 14.3281 23.9534 14.4746 23.875C15.0254 23.5825 28 16.5 28 7.75C27.998 5.69531 27.1797 3.72534 25.7266 2.27246C24.2754 0.81958 22.3047 0.00219727 20.25 0ZM14 21.8501C11.7168 20.52 2 14.4612 2 7.75C2.00195 6.22559 2.60938 4.76416 3.68555 3.68628C4.76367 2.6084 6.22656 2.00195 7.75 2C10.1816 2 12.2227 3.29492 13.0742 5.375C13.1504 5.55835 13.2793 5.71533 13.4434 5.82568C13.6074 5.93604 13.8008 5.99512 14 5.99512C14.1992 5.99512 14.3926 5.93604 14.5566 5.82568C14.7207 5.71533 14.8496 5.55835 14.9258 5.375C15.7773 3.29126 17.8184 2 20.25 2C21.7734 2.00195 23.2363 2.6084 24.3145 3.68628C25.3906 4.76416 25.998 6.22559 26 7.75C26 14.4512 16.2793 20.5188 14 21.8501Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <img src="./images/icons/heart_active.svg" alt="">
+                                </button>
+                                <a href="#" class="main_img">
+                                    <img src="./images/product_slide_card_1.png" alt="">
+                                </a>
+                                <div class="card_title">Пазл Step puzzle 4000 деталей: Краби, Тайланд, <span>Артикул:</span> 85417</div>
+                                <div class="card_comment disable">
+                                    <svg width="16.250000" height="15.631348" viewBox="0 0 16.25 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M8.46875 13.0283L12.4062 15.5283C12.9141 15.8486 13.5391 15.3721 13.3906 14.7861L12.25 10.3018C12.2207 10.1775 12.2246 10.0469 12.2656 9.92529C12.3047 9.80371 12.3789 9.6958 12.4766 9.61426L16.0078 6.66895C16.4688 6.28613 16.2344 5.5127 15.6328 5.47363L11.0234 5.17676C10.8984 5.16943 10.7773 5.12573 10.6758 5.05078C10.5742 4.97583 10.498 4.87305 10.4531 4.75488L8.73438 0.426758C8.68945 0.301758 8.60742 0.193604 8.49805 0.117188C8.38867 0.0410156 8.25781 0 8.125 0C7.99219 0 7.86328 0.0410156 7.75391 0.117188C7.64453 0.193604 7.5625 0.301758 7.51562 0.426758L5.79688 4.75488C5.75391 4.87305 5.67578 4.97583 5.57422 5.05078C5.47461 5.12573 5.35352 5.16943 5.22656 5.17676L0.617188 5.47363C0.015625 5.5127 -0.21875 6.28613 0.242188 6.66895L3.77344 9.61426C3.87305 9.6958 3.94727 9.80371 3.98633 9.92529C4.02734 10.0469 4.03125 10.1775 4 10.3018L2.94531 14.458C2.76562 15.1611 3.51562 15.7314 4.11719 15.3486L7.78125 13.0283C7.88477 12.9629 8.00391 12.9282 8.125 12.9282C8.24805 12.9282 8.36719 12.9629 8.46875 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <span>0,0</span>
+                                    <span>Отзывов пока нет</span>
+                                    <div class="discount">
+                                        <img src="./images/icons/discount.svg" alt="">
+                                        <span>-7%</span>
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    <div class="amount">
+                                        <span>1 240 ₽</span>
+                                        <del>1 240 ₽</del>
+                                    </div>
+                                    <button class="main_btn">
+                                        <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6561 7.13281C26.4783 6.93324 26.2602 6.77365 26.0162 6.66457C25.7722 6.55548 25.5078 6.49939 25.2405 6.5H19.6249C19.6249 5.00816 19.0322 3.57742 17.9774 2.52252C16.9225 1.46763 15.4917 0.875 13.9999 0.875C12.508 0.875 11.0773 1.46763 10.0224 2.52252C8.96751 3.57742 8.37488 5.00816 8.37488 6.5H2.75926C2.49355 6.50072 2.23097 6.55744 1.98866 6.66648C1.74636 6.77552 1.52976 6.93442 1.35301 7.13281C1.17773 7.33047 1.04619 7.56293 0.967028 7.81497C0.887862 8.06701 0.862849 8.33293 0.89363 8.59531L2.56472 22.6578C2.61892 23.116 2.84015 23.5381 3.18608 23.8434C3.53202 24.1487 3.97836 24.3157 4.43972 24.3125H23.5706C24.0319 24.3157 24.4783 24.1487 24.8242 23.8434C25.1702 23.5381 25.3914 23.116 25.4456 22.6578L27.1167 8.59531C27.1473 8.33285 27.1221 8.06688 27.0427 7.81483C26.9634 7.56279 26.8316 7.33037 26.6561 7.13281ZM13.9999 2.75C14.9944 2.75 15.9483 3.14509 16.6515 3.84835C17.3548 4.55161 17.7499 5.50544 17.7499 6.5H10.2499C10.2499 5.50544 10.645 4.55161 11.3482 3.84835C12.0515 3.14509 13.0053 2.75 13.9999 2.75ZM23.5811 22.4375C23.5777 22.4388 23.574 22.4388 23.5706 22.4375H4.4198L2.75926 8.375H8.37488V11.1875C8.37488 11.4361 8.47365 11.6746 8.64947 11.8504C8.82528 12.0262 9.06374 12.125 9.31238 12.125C9.56102 12.125 9.79948 12.0262 9.97529 11.8504C10.1511 11.6746 10.2499 11.4361 10.2499 11.1875V8.375H17.7499V11.1875C17.7499 11.4361 17.8487 11.6746 18.0245 11.8504C18.2003 12.0262 18.4387 12.125 18.6874 12.125C18.936 12.125 19.1745 12.0262 19.3503 11.8504C19.5261 11.6746 19.6249 11.4361 19.6249 11.1875V8.375H25.2499L23.5811 22.4375Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card_subtitle">В наличии</div>
+                            </div>
+
+                            <div class="product-slider__card_item">
+                                <button class="main_btn card_like">
+                                    <svg width="28.000000" height="23.994385" viewBox="0 0 28 23.9944" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M20.25 0C17.668 0 15.4082 1.11011 14 2.98633C12.5918 1.11011 10.332 0 7.75 0C5.69531 0.00219727 3.72461 0.81958 2.27344 2.27246C0.820312 3.72534 0.00195312 5.69531 0 7.75C0 16.5 12.9746 23.5825 13.5254 23.875C13.6719 23.9534 13.834 23.9944 14 23.9944C14.166 23.9944 14.3281 23.9534 14.4746 23.875C15.0254 23.5825 28 16.5 28 7.75C27.998 5.69531 27.1797 3.72534 25.7266 2.27246C24.2754 0.81958 22.3047 0.00219727 20.25 0ZM14 21.8501C11.7168 20.52 2 14.4612 2 7.75C2.00195 6.22559 2.60938 4.76416 3.68555 3.68628C4.76367 2.6084 6.22656 2.00195 7.75 2C10.1816 2 12.2227 3.29492 13.0742 5.375C13.1504 5.55835 13.2793 5.71533 13.4434 5.82568C13.6074 5.93604 13.8008 5.99512 14 5.99512C14.1992 5.99512 14.3926 5.93604 14.5566 5.82568C14.7207 5.71533 14.8496 5.55835 14.9258 5.375C15.7773 3.29126 17.8184 2 20.25 2C21.7734 2.00195 23.2363 2.6084 24.3145 3.68628C25.3906 4.76416 25.998 6.22559 26 7.75C26 14.4512 16.2793 20.5188 14 21.8501Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <img src="./images/icons/heart_active.svg" alt="">
+                                </button>
+                                <a href="#" class="main_img">
+                                    <img src="./images/product_slide_card_2.png" alt="">
+                                </a>
+                                <div class="card_title">Набор 10 пазлов по 54 детали Step: Marvel <span>Артикул:</span> 71183</div>
+                                <div class="card_comment">
+                                    <svg width="16.250000" height="15.631348" viewBox="0 0 16.25 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M8.46875 13.0283L12.4062 15.5283C12.9141 15.8486 13.5391 15.3721 13.3906 14.7861L12.25 10.3018C12.2207 10.1775 12.2246 10.0469 12.2656 9.92529C12.3047 9.80371 12.3789 9.6958 12.4766 9.61426L16.0078 6.66895C16.4688 6.28613 16.2344 5.5127 15.6328 5.47363L11.0234 5.17676C10.8984 5.16943 10.7773 5.12573 10.6758 5.05078C10.5742 4.97583 10.498 4.87305 10.4531 4.75488L8.73438 0.426758C8.68945 0.301758 8.60742 0.193604 8.49805 0.117188C8.38867 0.0410156 8.25781 0 8.125 0C7.99219 0 7.86328 0.0410156 7.75391 0.117188C7.64453 0.193604 7.5625 0.301758 7.51562 0.426758L5.79688 4.75488C5.75391 4.87305 5.67578 4.97583 5.57422 5.05078C5.47461 5.12573 5.35352 5.16943 5.22656 5.17676L0.617188 5.47363C0.015625 5.5127 -0.21875 6.28613 0.242188 6.66895L3.77344 9.61426C3.87305 9.6958 3.94727 9.80371 3.98633 9.92529C4.02734 10.0469 4.03125 10.1775 4 10.3018L2.94531 14.458C2.76562 15.1611 3.51562 15.7314 4.11719 15.3486L7.78125 13.0283C7.88477 12.9629 8.00391 12.9282 8.125 12.9282C8.24805 12.9282 8.36719 12.9629 8.46875 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <span>4,0</span>
+                                    <span>(10 отзывов)</span>
+                                    <div class="discount">
+                                        <img src="./images/icons/discount.svg" alt="">
+                                        <span>-7%</span>
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    <div class="amount">
+                                        <span>380 ₽</span>
+                                    </div>
+                                    <button class="main_btn">
+                                        <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6561 7.13281C26.4783 6.93324 26.2602 6.77365 26.0162 6.66457C25.7722 6.55548 25.5078 6.49939 25.2405 6.5H19.6249C19.6249 5.00816 19.0322 3.57742 17.9774 2.52252C16.9225 1.46763 15.4917 0.875 13.9999 0.875C12.508 0.875 11.0773 1.46763 10.0224 2.52252C8.96751 3.57742 8.37488 5.00816 8.37488 6.5H2.75926C2.49355 6.50072 2.23097 6.55744 1.98866 6.66648C1.74636 6.77552 1.52976 6.93442 1.35301 7.13281C1.17773 7.33047 1.04619 7.56293 0.967028 7.81497C0.887862 8.06701 0.862849 8.33293 0.89363 8.59531L2.56472 22.6578C2.61892 23.116 2.84015 23.5381 3.18608 23.8434C3.53202 24.1487 3.97836 24.3157 4.43972 24.3125H23.5706C24.0319 24.3157 24.4783 24.1487 24.8242 23.8434C25.1702 23.5381 25.3914 23.116 25.4456 22.6578L27.1167 8.59531C27.1473 8.33285 27.1221 8.06688 27.0427 7.81483C26.9634 7.56279 26.8316 7.33037 26.6561 7.13281ZM13.9999 2.75C14.9944 2.75 15.9483 3.14509 16.6515 3.84835C17.3548 4.55161 17.7499 5.50544 17.7499 6.5H10.2499C10.2499 5.50544 10.645 4.55161 11.3482 3.84835C12.0515 3.14509 13.0053 2.75 13.9999 2.75ZM23.5811 22.4375C23.5777 22.4388 23.574 22.4388 23.5706 22.4375H4.4198L2.75926 8.375H8.37488V11.1875C8.37488 11.4361 8.47365 11.6746 8.64947 11.8504C8.82528 12.0262 9.06374 12.125 9.31238 12.125C9.56102 12.125 9.79948 12.0262 9.97529 11.8504C10.1511 11.6746 10.2499 11.4361 10.2499 11.1875V8.375H17.7499V11.1875C17.7499 11.4361 17.8487 11.6746 18.0245 11.8504C18.2003 12.0262 18.4387 12.125 18.6874 12.125C18.936 12.125 19.1745 12.0262 19.3503 11.8504C19.5261 11.6746 19.6249 11.4361 19.6249 11.1875V8.375H25.2499L23.5811 22.4375Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card_subtitle">В наличии</div>
+                            </div>
+
+                            <div class="product-slider__card_item">
+                                <button class="main_btn card_like">
+                                    <svg width="28.000000" height="23.994385" viewBox="0 0 28 23.9944" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M20.25 0C17.668 0 15.4082 1.11011 14 2.98633C12.5918 1.11011 10.332 0 7.75 0C5.69531 0.00219727 3.72461 0.81958 2.27344 2.27246C0.820312 3.72534 0.00195312 5.69531 0 7.75C0 16.5 12.9746 23.5825 13.5254 23.875C13.6719 23.9534 13.834 23.9944 14 23.9944C14.166 23.9944 14.3281 23.9534 14.4746 23.875C15.0254 23.5825 28 16.5 28 7.75C27.998 5.69531 27.1797 3.72534 25.7266 2.27246C24.2754 0.81958 22.3047 0.00219727 20.25 0ZM14 21.8501C11.7168 20.52 2 14.4612 2 7.75C2.00195 6.22559 2.60938 4.76416 3.68555 3.68628C4.76367 2.6084 6.22656 2.00195 7.75 2C10.1816 2 12.2227 3.29492 13.0742 5.375C13.1504 5.55835 13.2793 5.71533 13.4434 5.82568C13.6074 5.93604 13.8008 5.99512 14 5.99512C14.1992 5.99512 14.3926 5.93604 14.5566 5.82568C14.7207 5.71533 14.8496 5.55835 14.9258 5.375C15.7773 3.29126 17.8184 2 20.25 2C21.7734 2.00195 23.2363 2.6084 24.3145 3.68628C25.3906 4.76416 25.998 6.22559 26 7.75C26 14.4512 16.2793 20.5188 14 21.8501Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <img src="./images/icons/heart_active.svg" alt="">
+                                </button>
+                                <a href="#" class="main_img">
+                                    <img src="./images/product_slide_card_3.png" alt="">
+                                </a>
+                                <div class="card_title">Пазл Castorland 180 деталей: Железнодорожный вокзал (В-018475) <span>Артикул:</span> 71183</div>
+                                <div class="card_comment disable">
+                                    <svg width="16.250000" height="15.631348" viewBox="0 0 16.25 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M8.46875 13.0283L12.4062 15.5283C12.9141 15.8486 13.5391 15.3721 13.3906 14.7861L12.25 10.3018C12.2207 10.1775 12.2246 10.0469 12.2656 9.92529C12.3047 9.80371 12.3789 9.6958 12.4766 9.61426L16.0078 6.66895C16.4688 6.28613 16.2344 5.5127 15.6328 5.47363L11.0234 5.17676C10.8984 5.16943 10.7773 5.12573 10.6758 5.05078C10.5742 4.97583 10.498 4.87305 10.4531 4.75488L8.73438 0.426758C8.68945 0.301758 8.60742 0.193604 8.49805 0.117188C8.38867 0.0410156 8.25781 0 8.125 0C7.99219 0 7.86328 0.0410156 7.75391 0.117188C7.64453 0.193604 7.5625 0.301758 7.51562 0.426758L5.79688 4.75488C5.75391 4.87305 5.67578 4.97583 5.57422 5.05078C5.47461 5.12573 5.35352 5.16943 5.22656 5.17676L0.617188 5.47363C0.015625 5.5127 -0.21875 6.28613 0.242188 6.66895L3.77344 9.61426C3.87305 9.6958 3.94727 9.80371 3.98633 9.92529C4.02734 10.0469 4.03125 10.1775 4 10.3018L2.94531 14.458C2.76562 15.1611 3.51562 15.7314 4.11719 15.3486L7.78125 13.0283C7.88477 12.9629 8.00391 12.9282 8.125 12.9282C8.24805 12.9282 8.36719 12.9629 8.46875 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <span>0,0</span>
+                                    <span>Отзывов пока нет</span>
+                                    <div class="discount">
+                                        <img src="./images/icons/discount.svg" alt="">
+                                        <span>-7%</span>
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    <div class="amount">
+                                        <span>270 ₽</span>
+                                    </div>
+                                    <button class="main_btn disable">
+                                        <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6561 7.13281C26.4783 6.93324 26.2602 6.77365 26.0162 6.66457C25.7722 6.55548 25.5078 6.49939 25.2405 6.5H19.6249C19.6249 5.00816 19.0322 3.57742 17.9774 2.52252C16.9225 1.46763 15.4917 0.875 13.9999 0.875C12.508 0.875 11.0773 1.46763 10.0224 2.52252C8.96751 3.57742 8.37488 5.00816 8.37488 6.5H2.75926C2.49355 6.50072 2.23097 6.55744 1.98866 6.66648C1.74636 6.77552 1.52976 6.93442 1.35301 7.13281C1.17773 7.33047 1.04619 7.56293 0.967028 7.81497C0.887862 8.06701 0.862849 8.33293 0.89363 8.59531L2.56472 22.6578C2.61892 23.116 2.84015 23.5381 3.18608 23.8434C3.53202 24.1487 3.97836 24.3157 4.43972 24.3125H23.5706C24.0319 24.3157 24.4783 24.1487 24.8242 23.8434C25.1702 23.5381 25.3914 23.116 25.4456 22.6578L27.1167 8.59531C27.1473 8.33285 27.1221 8.06688 27.0427 7.81483C26.9634 7.56279 26.8316 7.33037 26.6561 7.13281ZM13.9999 2.75C14.9944 2.75 15.9483 3.14509 16.6515 3.84835C17.3548 4.55161 17.7499 5.50544 17.7499 6.5H10.2499C10.2499 5.50544 10.645 4.55161 11.3482 3.84835C12.0515 3.14509 13.0053 2.75 13.9999 2.75ZM23.5811 22.4375C23.5777 22.4388 23.574 22.4388 23.5706 22.4375H4.4198L2.75926 8.375H8.37488V11.1875C8.37488 11.4361 8.47365 11.6746 8.64947 11.8504C8.82528 12.0262 9.06374 12.125 9.31238 12.125C9.56102 12.125 9.79948 12.0262 9.97529 11.8504C10.1511 11.6746 10.2499 11.4361 10.2499 11.1875V8.375H17.7499V11.1875C17.7499 11.4361 17.8487 11.6746 18.0245 11.8504C18.2003 12.0262 18.4387 12.125 18.6874 12.125C18.936 12.125 19.1745 12.0262 19.3503 11.8504C19.5261 11.6746 19.6249 11.4361 19.6249 11.1875V8.375H25.2499L23.5811 22.4375Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card_subtitle disable">Нет в наличии</div>
+                            </div>
+                        
+                            <div class="product-slider__card_item">
+                                <button class="main_btn card_like">
+                                    <svg width="28.000000" height="23.994385" viewBox="0 0 28 23.9944" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M20.25 0C17.668 0 15.4082 1.11011 14 2.98633C12.5918 1.11011 10.332 0 7.75 0C5.69531 0.00219727 3.72461 0.81958 2.27344 2.27246C0.820312 3.72534 0.00195312 5.69531 0 7.75C0 16.5 12.9746 23.5825 13.5254 23.875C13.6719 23.9534 13.834 23.9944 14 23.9944C14.166 23.9944 14.3281 23.9534 14.4746 23.875C15.0254 23.5825 28 16.5 28 7.75C27.998 5.69531 27.1797 3.72534 25.7266 2.27246C24.2754 0.81958 22.3047 0.00219727 20.25 0ZM14 21.8501C11.7168 20.52 2 14.4612 2 7.75C2.00195 6.22559 2.60938 4.76416 3.68555 3.68628C4.76367 2.6084 6.22656 2.00195 7.75 2C10.1816 2 12.2227 3.29492 13.0742 5.375C13.1504 5.55835 13.2793 5.71533 13.4434 5.82568C13.6074 5.93604 13.8008 5.99512 14 5.99512C14.1992 5.99512 14.3926 5.93604 14.5566 5.82568C14.7207 5.71533 14.8496 5.55835 14.9258 5.375C15.7773 3.29126 17.8184 2 20.25 2C21.7734 2.00195 23.2363 2.6084 24.3145 3.68628C25.3906 4.76416 25.998 6.22559 26 7.75C26 14.4512 16.2793 20.5188 14 21.8501Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <img src="./images/icons/heart_active.svg" alt="">
+                                </button>
+                                <a href="#" class="main_img">
+                                    <img src="./images/product_slide_card_1.png" alt="">
+                                </a>
+                                <div class="card_title">Пазл Step puzzle 4000 деталей: Краби, Тайланд, <span>Артикул:</span> 85417</div>
+                                <div class="card_comment disable">
+                                    <svg width="16.250000" height="15.631348" viewBox="0 0 16.25 15.6313" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M8.46875 13.0283L12.4062 15.5283C12.9141 15.8486 13.5391 15.3721 13.3906 14.7861L12.25 10.3018C12.2207 10.1775 12.2246 10.0469 12.2656 9.92529C12.3047 9.80371 12.3789 9.6958 12.4766 9.61426L16.0078 6.66895C16.4688 6.28613 16.2344 5.5127 15.6328 5.47363L11.0234 5.17676C10.8984 5.16943 10.7773 5.12573 10.6758 5.05078C10.5742 4.97583 10.498 4.87305 10.4531 4.75488L8.73438 0.426758C8.68945 0.301758 8.60742 0.193604 8.49805 0.117188C8.38867 0.0410156 8.25781 0 8.125 0C7.99219 0 7.86328 0.0410156 7.75391 0.117188C7.64453 0.193604 7.5625 0.301758 7.51562 0.426758L5.79688 4.75488C5.75391 4.87305 5.67578 4.97583 5.57422 5.05078C5.47461 5.12573 5.35352 5.16943 5.22656 5.17676L0.617188 5.47363C0.015625 5.5127 -0.21875 6.28613 0.242188 6.66895L3.77344 9.61426C3.87305 9.6958 3.94727 9.80371 3.98633 9.92529C4.02734 10.0469 4.03125 10.1775 4 10.3018L2.94531 14.458C2.76562 15.1611 3.51562 15.7314 4.11719 15.3486L7.78125 13.0283C7.88477 12.9629 8.00391 12.9282 8.125 12.9282C8.24805 12.9282 8.36719 12.9629 8.46875 13.0283Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <span>0,0</span>
+                                    <span>Отзывов пока нет</span>
+                                    <div class="discount">
+                                        <img src="./images/icons/discount.svg" alt="">
+                                        <span>-7%</span>
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    <div class="amount">
+                                        <span>1 240 ₽</span>
+                                        <del>1 240 ₽</del>
+                                    </div>
+                                    <button class="main_btn">
+                                        <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6561 7.13281C26.4783 6.93324 26.2602 6.77365 26.0162 6.66457C25.7722 6.55548 25.5078 6.49939 25.2405 6.5H19.6249C19.6249 5.00816 19.0322 3.57742 17.9774 2.52252C16.9225 1.46763 15.4917 0.875 13.9999 0.875C12.508 0.875 11.0773 1.46763 10.0224 2.52252C8.96751 3.57742 8.37488 5.00816 8.37488 6.5H2.75926C2.49355 6.50072 2.23097 6.55744 1.98866 6.66648C1.74636 6.77552 1.52976 6.93442 1.35301 7.13281C1.17773 7.33047 1.04619 7.56293 0.967028 7.81497C0.887862 8.06701 0.862849 8.33293 0.89363 8.59531L2.56472 22.6578C2.61892 23.116 2.84015 23.5381 3.18608 23.8434C3.53202 24.1487 3.97836 24.3157 4.43972 24.3125H23.5706C24.0319 24.3157 24.4783 24.1487 24.8242 23.8434C25.1702 23.5381 25.3914 23.116 25.4456 22.6578L27.1167 8.59531C27.1473 8.33285 27.1221 8.06688 27.0427 7.81483C26.9634 7.56279 26.8316 7.33037 26.6561 7.13281ZM13.9999 2.75C14.9944 2.75 15.9483 3.14509 16.6515 3.84835C17.3548 4.55161 17.7499 5.50544 17.7499 6.5H10.2499C10.2499 5.50544 10.645 4.55161 11.3482 3.84835C12.0515 3.14509 13.0053 2.75 13.9999 2.75ZM23.5811 22.4375C23.5777 22.4388 23.574 22.4388 23.5706 22.4375H4.4198L2.75926 8.375H8.37488V11.1875C8.37488 11.4361 8.47365 11.6746 8.64947 11.8504C8.82528 12.0262 9.06374 12.125 9.31238 12.125C9.56102 12.125 9.79948 12.0262 9.97529 11.8504C10.1511 11.6746 10.2499 11.4361 10.2499 11.1875V8.375H17.7499V11.1875C17.7499 11.4361 17.8487 11.6746 18.0245 11.8504C18.2003 12.0262 18.4387 12.125 18.6874 12.125C18.936 12.125 19.1745 12.0262 19.3503 11.8504C19.5261 11.6746 19.6249 11.4361 19.6249 11.1875V8.375H25.2499L23.5811 22.4375Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card_subtitle">В наличии</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- Product slider end -->
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer_top">
+                <div class="main_container">
+                    <div class="footer_block">
+                        <h6>
+                            Клиентам
+                        </h6>
+                        <ul class="footer_link">
+                            <li class="footer_item">
+                                <a href="#">
+                                    Доставка
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#">
+                                    Оплата
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#">
+                                    Скидки
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block">  
+                        <h6>
+                            Компания
+                        </h6>
+                        <ul class="footer_link">
+                            <li class="footer_item">
+                                <a href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block">
+                        <h6>
+                            Личный кабинет
+                        </h6>
+                        <ul class="footer_link">
+                            <li class="footer_item">
+                                <a href="#">
+                                    Вход
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#">
+                                    Регистрация
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block">
+                        <ul class="footer_link">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item_block">
+                                    +7(495)968-80-01
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block">
+                        <ul class="footer_link">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item_block">
+                                    Адрес: Москвам.<br> Первомайская,9-я Парковая, 33
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="main_container">
+                    <p>
+                        1001puzzle © 2023
+                    </p>
+                    <div class="footer_pay">
+                        <span>
+                            Принимаем к оплате:
+                        </span>
+                        <div class="footer_pay_in">
+                            <a href="#">
+                                <img src="./images/icons/footer_pay1.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/footer_pay2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/footer_pay3.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/footer_pay4.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/footer_pay5.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper js -->
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+    <!-- js file -->
+</body>
+</html>
