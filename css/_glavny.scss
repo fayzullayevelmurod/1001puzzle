@@ -1887,11 +1887,15 @@
 
 @media only screen and (max-width: 992px) and (max-height: 750px) {
     .auth_block {
-        display: block;
+        // display: block;
 
         &__content {
             overflow-y: scroll;
             height: 100%;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
 
             &_in {
                 height: 670px;

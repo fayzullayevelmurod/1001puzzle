@@ -13,7 +13,7 @@ $(document).ready(function () {
             home_slider.slideTo(idx);
         })
     })
-    
+
     $('.product-slider__card').each(function (idx, el) {
         let swiper = new Swiper($(el).find('.swiper')[0], {
             slidesPerView: 1,
@@ -32,7 +32,7 @@ $(document).ready(function () {
                 }
             }
         })
-    
+
     })
 
     $('.card_like').click(function () {
@@ -111,7 +111,7 @@ $(document).ready(function () {
         }
     })
 
-    
+
     let auth_block_parent = new Swiper('.auth_block__parent_slider', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -149,8 +149,8 @@ $(document).ready(function () {
     })
 
     $('.auth_block__continue').hide(0);
-    
-    
+
+
     $('.auth_block__register .form_btn').click(function () {
         $($('.auth_block__continue p')[0]).show(0);
         $($('.auth_block__continue p')[1]).hide(0);
@@ -171,7 +171,7 @@ $(document).ready(function () {
         } else {
             $('.auth_block').slideUp(0);
         }
-        $('body').css({overflow: 'visible'})
+        $('body').css({ overflow: 'visible' })
         setTimeout(() => {
             $('.auth_block__parent_slider').show(0)
             $('.auth_block__continue').hide(0);
@@ -186,13 +186,62 @@ $(document).ready(function () {
             $('.auth_block').removeClass('end-active').addClass('active')
         } else {
             $('.auth_block').slideDown(0);
-            $('.auth_block').css({display: 'flex'});
-            $('body').css({overflow: 'hidden'})
+            $('.auth_block').css({ display: 'flex' });
+            $('body').css({ overflow: 'hidden' })
         }
     })
 
     $('.auth_block__continue .form_btn').click(function () {
         $('.auth_block__close').click();
+    })
+
+    $('.media_btn').click(function () {
+        $('.mobile_menu').css({display: 'flex'});
+    })
+
+    $('.mobile_menu__close').click(function () {
+        $('.mobile_menu').css({display: 'none'});
+    })
+
+    $('.range-container').each(function(idx, el) {
+        makeRange(el);
+
+        $(el).find('input').on('input', function (e) {
+            makeRange(el);
+        })
+    })
+
+    function scale(num, in_min, in_max, out_min, out_max) {
+        return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+    }
+
+    function makeRange (input_wrap) {
+        const input = $(input_wrap).find('input')
+        const value = +$(input_wrap).find('input').val();
+        const label = $(input_wrap).find('label');
+
+        const rangeWidth = +$(input).css("width").slice(0, -2);
+        const labelWidth = +$(label).css("width").slice(0, -2);
+
+        const max = +$(input).attr("max");
+        const min = +$(input).attr("min");
+
+        const left =
+            value * (rangeWidth / max) -
+            labelWidth / 2 +
+            scale(value, min, max, 10, -10);
+
+        $(label).css("left", left + "px");
+
+        $(label).find('span').html(value);
+    }
+
+    $('.catalog_btn').click(function () {
+        $('.filter_category').css({display: 'block'});
+    })
+    
+    $('.filter_category__close').click(function () {
+        $('.filter_category').css({display: 'none'});
     })
 
     // Code here
