@@ -21,14 +21,11 @@
 }
 
 .home-block {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
     position: relative;
     z-index: 2;
 
     &__left {
-        width: 326px;
+        width: 100%;
         position: relative;
         z-index: 2;
 
@@ -40,14 +37,10 @@
         
         .dates {
             padding: 15px 14px 15px 15px;
-            display: flex;
-            flex-direction: column;
             gap: 15px;
             margin-bottom: 25px;
 
             &__item {
-                display: flex;
-
                 &_left {
                     color: #9b9b9b;
                     letter-spacing: 0%;
@@ -104,8 +97,6 @@
                 text-align: center;
 
                 .btn_wrap {
-                    display: flex;
-                    justify-content: center;
                     margin-bottom: 51px;
 
                     .main_btn {
@@ -118,7 +109,7 @@
     }
 
     &__right {
-        width: calc(100% - 346px);
+        width: 100%;
     }
 }
 
@@ -225,9 +216,9 @@
     }
 
     &__head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
         margin: 82px 0 39px;
 
         h2 {
