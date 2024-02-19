@@ -15,24 +15,46 @@ $(document).ready(function () {
     })
 
     $('.product-slider__card').each(function (idx, el) {
-        let swiper = new Swiper($(el).find('.swiper')[0], {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            speed: 1000,
-            navigation: {
-                nextEl: $(el).find('.product-slider__card__btn_next')[0],
-                prevEl: $(el).find('.product-slider__card__btn_prev')[0],
-            },
-            breakpoints: {
-                1200: {
-                    slidesPerView: 3
+        if ($('.product-slider.product_page')[0]) {
+            let swiper = new Swiper($(el).find('.swiper')[0], {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 1000,
+                navigation: {
+                    nextEl: $(el).find('.product-slider__card__btn_next')[0],
+                    prevEl: $(el).find('.product-slider__card__btn_prev')[0],
                 },
-                576: {
-                    slidesPerView: 2
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 4
+                    },
+                    900: {
+                        slidesPerView: 3
+                    },
+                    576: {
+                        slidesPerView: 2,
+                    }
                 }
-            }
-        })
-
+            })
+        } else {
+            let swiper = new Swiper($(el).find('.swiper')[0], {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 1000,
+                navigation: {
+                    nextEl: $(el).find('.product-slider__card__btn_next')[0],
+                    prevEl: $(el).find('.product-slider__card__btn_prev')[0],
+                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 3
+                    },
+                    576: {
+                        slidesPerView: 2
+                    }
+                }
+            })
+        }
     })
 
     $('.card_like').click(function () {
