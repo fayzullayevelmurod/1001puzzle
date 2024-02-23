@@ -249,6 +249,14 @@ header {
             gap: 10px;
             border-radius: 10px;
             background: $grey-1;
+
+            a {
+                width: 35px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         .header_feedback {
