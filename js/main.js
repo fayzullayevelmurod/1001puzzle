@@ -31,7 +31,7 @@ $(document).ready(function () {
                     900: {
                         slidesPerView: 3
                     },
-                    576: {
+                    576: { 
                         slidesPerView: 2,
                     }
                 }

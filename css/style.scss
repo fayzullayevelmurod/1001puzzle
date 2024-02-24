@@ -101,11 +101,9 @@ address {
     overflow: hidden;
     position: relative;
 
-    &.home {
-        .main_container {
-            max-width: 1440px;
-            padding: 0 40px;
-        }
+    .main_container {
+        max-width: 1440px;
+        padding: 0 40px;
     }
 }
 
@@ -251,10 +249,27 @@ header {
             background: $grey-1;
 
             a {
-                width: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                    width: 100%;
+                span {
+                    width: 34px;
+                    height: 26px;
+
+                    &.vk {
+                        background: #0077FF;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        i {
+                            color: #0077FF;
+                            background: #fff;
+                            font-size: 42px;
+                        }
+                    }
                 }
             }
         }
@@ -492,6 +507,8 @@ header {
     }
 
     &__content {
+        width: 100%;
+
         .notification {
             gap: 76px;
             margin-bottom: 30px;
@@ -534,6 +551,10 @@ header {
         }
 
         .content_bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
             .phone {
                 gap: 13px;
             }
@@ -555,6 +576,31 @@ header {
                 border-radius: 10px;
                 gap: 10px;
                 padding: 7px 10px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    span {
+                        width: 34px;
+                        height: 26px;
+    
+                        &.vk {
+                            background: #0077FF;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            i {
+                                color: #0077FF;
+                                background: #fff;
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                }
             }
 
             .feedback {
@@ -2948,4 +2994,4 @@ footer {
 // series
 
 @import 'responsive';
-@import 'glavny'
+@import 'responsive'
