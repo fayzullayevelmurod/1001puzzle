@@ -1411,10 +1411,19 @@ header {
 
         &_prev {
             margin-right: 14px;
+
+            i {
+                transform: rotate(180deg);
+                font-size: 25px;
+            }
         }
 
         &_next {
             margin-left: 14px;
+
+            i {
+                font-size: 25px;
+            }
         }
     }
     

@@ -1157,8 +1157,15 @@ header .header_bottom_link .shop_btn .number {
 .main_pagination__item_prev {
   margin-right: 14px;
 }
+.main_pagination__item_prev i {
+  transform: rotate(180deg);
+  font-size: 25px;
+}
 .main_pagination__item_next {
   margin-left: 14px;
+}
+.main_pagination__item_next i {
+  font-size: 25px;
 }
 .main_pagination a {
   display: flex;
