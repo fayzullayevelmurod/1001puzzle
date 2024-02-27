@@ -1703,6 +1703,18 @@ header {
         }
     }
 
+    .product-card__child_slider__btn_prev {
+        i {
+            font-size: 35px;
+        }
+    }
+
+    .product-card__child_slider__btn_next {
+        i {
+            font-size: 35px;
+        }
+    }
+
     .child_slider__wrap {
         max-width: 670px;
         margin-bottom: 100px;
@@ -2932,7 +2944,6 @@ footer {
     }
 }
 // articles
-
 
 // puzzles
 .puzzles {

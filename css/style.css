@@ -1402,6 +1402,12 @@ header .header_bottom_link .shop_btn .number {
   left: 50%;
   transform: translateX(-55%);
 }
+.product-card .product-card__child_slider__btn_prev i {
+  font-size: 35px;
+}
+.product-card .product-card__child_slider__btn_next i {
+  font-size: 35px;
+}
 .product-card .child_slider__wrap {
   max-width: 670px;
   margin-bottom: 100px;
