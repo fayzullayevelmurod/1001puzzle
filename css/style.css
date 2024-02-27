@@ -1100,6 +1100,10 @@ header .header_bottom_link .shop_btn .number {
 .product-slider.product_page .product-slider__card__btn_next {
   top: 207px;
 }
+.product-slider.product_page .product-slider__card__btn_prev i,
+.product-slider.product_page .product-slider__card__btn_next i {
+  font-size: 35px;
+}
 
 .discount_descriptions {
   gap: 20px;
