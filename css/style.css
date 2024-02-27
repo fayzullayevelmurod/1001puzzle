@@ -354,6 +354,7 @@ header .header_search label {
   flex-shrink: 0;
   cursor: pointer;
   height: 100%;
+  width: 50px;
   padding: 10px 20px;
   background-color: #FE9B00;
   transition: 0.2s ease;
